@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{EA98BAD7-922F-44F7-8A14-ABF188AED27E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyTiemChung", "QuanLyTiemChung\QuanLyTiemChung.csproj", "{D3357CAF-B169-428B-B126-1AF004B254CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA98BAD7-922F-44F7-8A14-ABF188AED27E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA98BAD7-922F-44F7-8A14-ABF188AED27E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA98BAD7-922F-44F7-8A14-ABF188AED27E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA98BAD7-922F-44F7-8A14-ABF188AED27E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3357CAF-B169-428B-B126-1AF004B254CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3357CAF-B169-428B-B126-1AF004B254CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3357CAF-B169-428B-B126-1AF004B254CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3357CAF-B169-428B-B126-1AF004B254CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD2DE96E-D816-4831-88E5-DA445FB9D791}
+	EndGlobalSection
+EndGlobal

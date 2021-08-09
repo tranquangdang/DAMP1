@@ -1,0 +1,125 @@
+﻿@model Models.EF.Vaccine
+
+@{
+    ViewBag.Title = "Lưu vaccine";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section header{
+    <i class="fa fa-save"></i>&nbsp;Lưu sản phẩm
+}
+
+@using (Html.BeginForm("Create", "Vaccine", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <div class="col-lg-12 form-group">
+            <div class="form-group">
+                <label class="control-label col-md-2">Chỉ định:</label>
+                <div class="col-md-10">
+                    @if (ViewBag.Update != true)
+                    {
+                        @Html.TextBoxFor(model => model.id, new { @class = "form-control hide" });
+                        @Html.TextBoxFor(model => model.hinhAnh, new { @class = "form-control hide" });
+                    }
+                    @Html.DropDownListFor(model => model.id_chiDinh, ViewBag.ChiDinhList as SelectList, new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2">Tên:</label>
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.ten, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.ten, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2">Hình ảnh:</label>
+                <div class="col-md-10">
+                    @Html.TextBox("hinhAnh", "", new { @type = "file", @id = "hinhAnh", @name = "hinhAnh", @onchange = "Validate()" })
+                    <SCRIPT type="text/javascript">
+                        $(function Validate() {
+                            $('input[type=file]').change(function () {
+                                var val = $(this).val().toLowerCase(),
+                                    regex = new RegExp("(.*?)\.(jpg|jpeg|bmp|gif|png)$");
+
+                                const size =
+                                    (this.files[0].size / 1024 / 1024).toFixed(2);
+
+                                if (!(regex.test(val)) || size > 2) {
+                                    $(this).val('');
+                                    alert('Chỉ cho phép file có định dạng .jpg, .jpeg, .bmp, .gif, .png và <= 2MB');
+                                }
+                            });
+                        });
+                    </SCRIPT>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2">Giá tiền:</label>
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.giaTien, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.giaTien, "", new { @class = "text-danger", })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2">Ngày sản xuất:</label>
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.ngaySanXuat, "{0:dd-MM-yyyy}", new { @class = "form-control disable datepicker" })
+                    <script>
+                        $(function () {
+                            $(".datepicker").datepicker({
+                                changeMonth: true,
+                                changeYear: true,
+                                maxDate: '0'
+                            });
+                        });
+                    </script>
+                    @Html.ValidationMessageFor(model => model.ngaySanXuat, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2">Hạn sử dụng (tháng):</label>
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.hanSuDung, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.hanSuDung, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2">Số lượng (lọ):</label>
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.soLuong, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.soLuong, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2">Nhà sản xuất:</label>
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.nhaSanXuat, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.nhaSanXuat, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2">Ghi chú:</label>
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.ghiChu, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.ghiChu, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Lưu" class="btn btn-primary" />
+                    @Html.ActionLink("Quay lại", "Index", new { controller = "Vaccine" }, new { @class = "btn btn-default" })
+                </div>
+            </div>
+        </div>
+    </div>
+}
