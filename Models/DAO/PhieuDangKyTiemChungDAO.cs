@@ -21,6 +21,44 @@ namespace Models.DAO
             return db.PhieuDangKyTiemChungs.ToList();
         }
 
+        public PhieuDangKyTiemChung Find(int ID)
+        {
+            return db.PhieuDangKyTiemChungs.Find(ID);
+        }
+
+        public string Insert(PhieuDangKyTiemChung entity)
+        {
+            var phieuTC = Find(entity.id);
+            if (phieuTC == null)
+            {
+                db.PhieuDangKyTiemChungs.Add(entity);
+            }
+            else
+            {
+                phieuTC.id_treEm = entity.id_treEm;
+                phieuTC.ngayYeuCau = entity.ngayYeuCau;
+                phieuTC.ngayHen = entity.ngayHen;
+            }
+            db.SaveChanges();
+            return entity.id.ToString();
+        }
+
+        public bool Delete(int ID)
+        {
+            try
+            {
+                var phieuTC = Find(ID);
+                db.PhieuDangKyTiemChungs.Remove(phieuTC);
+                db.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+
+        }
+
         public string Revenue()
         {
             decimal? t, l;

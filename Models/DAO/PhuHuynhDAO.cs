@@ -31,5 +31,28 @@ namespace Models.DAO
             }
             return model.OrderBy(s => s.ten).ToPagedList(page, pagesize);
         }
+
+        public string login(string taikhoan, string matkhau)
+        {
+            var result = db.PhuHuynhs.Any(x => x.taikhoan == taikhoan);
+            if (!result)
+            {
+                return "Không tìm thấy tài khoản này!";
+            }
+            else
+            {
+                var model = db.PhuHuynhs.SingleOrDefault(x => x.taikhoan.Contains(taikhoan) && x.matkhau.Contains(matkhau));
+                if (model != null)
+                {
+
+                    return "";
+
+                }
+                else
+                {
+                    return "Sai mật khẩu! ";
+                }
+            }
+        }
     }
 }

@@ -1,0 +1,296 @@
+﻿@model IEnumerable<Models.EF.Vaccine>
+@{
+    ViewBag.Title = "Trang chủ";
+    Layout = "~/Areas/QLTCWebsite/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Start Banner -->
+<div class="ulockd-home-slider">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="pogoSlider" id="js-main-slider">
+                <div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background-image: url('/Assets/user/images/slider-01.jpg');">
+                    <div class="lbox-caption pogoSlider-slide-element">
+                        <div class="lbox-details">
+                            <h1>Chào mừng bạn đến với Health Lab</h1>
+                            <p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum </p>
+                            <a href="#" class="btn">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background-image: url('/Assets/user/images/slider-02.jpg');">
+                    <div class="lbox-caption pogoSlider-slide-element">
+                        <div class="lbox-details">
+                            <h1>Cam kết với đội ngũ Bác sĩ trình độ cao</h1>
+                            <p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum</p>
+                            <a href="#appointment" class="btn">Đăng ký tiêm</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pogoSlider-slide" data-transition="fade" data-duration="1500" style="background-image:url('/Assets/user/images/slider-03.jpg');">
+                    <div class="lbox-caption pogoSlider-slide-element">
+                        <div class="lbox-details">
+                            <h1>Những liệu trình được kiểm nghiệm hàng đầu</h1>
+                            <p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum </p>
+                            <a href="#" class="btn">Contact Us</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!-- .pogoSlider -->
+        </div>
+    </div>
+</div>
+<!-- End Banner -->
+<!-- Start About us -->
+<div id="about" class="about-box">
+    <div class="about-a1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-box">
+                        <h2>About Us</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="row align-items-center about-main-info">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <h2> Mừng bạn đến với Health Lab </h2>
+                            <p>Hệ thống tiêm chủng Health Lab (thuộc Công ty Cổ phần Vacxin Việt Nam) chính thức đi vào hoạt động từ tháng 6 năm 2017. Trong bối cảnh thế giới đang phải đương đầu với tình trạng biến đổi phức tạp của các chủng vi khuẩn gây bệnh cũng như sự thiếu hụt vắc xin tại Việt Nam như hiện nay, Hệ thống tiêm chủng VNVC ra đời nhằm cung cấp cho trẻ em Việt Nam những loại vắc xin có chất lượng tốt nhất cùng với hệ thống phòng tiêm chủng an toàn, hiện đại và cao cấp. </p>
+                            <p>Trong tương lai, hệ thống tiêm chủng Health Lab dự kiến triển khai mở thêm nhiều trung tâm tiêm chủng cao cấp nữa tại Việt Nam, mang vắc xin và dịch vụ tiêm chủng đẳng cấp 5 sao, giá bình ổn, đến gần hơn với người dân ở mọi miền đất nước. </p>
+                            <a href="#" class="new-btn-d br-2">Read More</a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="about-m">
+                                <ul id="banner">
+                                    <li>
+                                        <img src="~/Assets/user/images/about-img-01.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="~/Assets/user/images/about-img-02.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="~/Assets/user/images/about-img-03.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End About us -->
+<!-- Start Services -->
+<div id="services" class="services-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-box">
+                    <h2>Gói tiêm chủng</h2>
+                    <p>Cam kết gói tiêm chủng, vaccine nhập khẩu đảm bảo nguồn gốc. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="owl-carousel owl-theme">
+                    @foreach (var item in Model)
+                    {
+                        <div class="item">
+                            <div class="serviceBox">
+                                <div style="margin-bottom:10px;"> <img src="@item.hinhAnh " alt="image" style="width:100%; height:200px;" /></div>
+                                <h3 class="title">@item.ten</h3>
+                                <p class="description">Nước sản xuất: @item.nhaSanXuat </p>
+                                <h4 class="">@String.Format("{0:0,0 VND}", item.giaTien)</h4>
+                                <a href="#" class="new-btn-d br-2">Xem thêm</a>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Services -->
+<!-- Start Appointment -->
+<!-- End Appointment -->
+<!-- Start Gallery -->
+<div id="gallery" class="gallery-box">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-box">
+                    <h2>Thư viện ảnh</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-gallery row clearfix">
+            <div class="col-md-3 col-sm-6">
+                <div class="box-gallery">
+                    <img src="~/Assets/user/images/gallery-01.jpg" alt="">
+                    <div class="box-content">
+                        <h3 class="title">Lorem ipsum dolor</h3>
+                        <ul class="icon">
+                            <li><a href="~/Assets/user/images/gallery-01.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="box-gallery">
+                    <img src="~/Assets/user/images/gallery-02.jpg" alt="">
+                    <div class="box-content">
+                        <h3 class="title">Lorem ipsum dolor</h3>
+                        <ul class="icon">
+                            <li><a href="~/Assets/user/images/gallery-02.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="box-gallery">
+                    <img src="~/Assets/user/images/gallery-03.jpg" alt="">
+                    <div class="box-content">
+                        <ul class="icon">
+                            <li><a href="~/Assets/user/images/gallery-03.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="box-gallery">
+                    <img src="~/Assets/user/images/gallery-04.jpg" alt="">
+                    <div class="box-content">
+                        <h3 class="title">Lorem ipsum dolor</h3>
+                        <ul class="icon">
+                            <li><a href="~/Assets/user/images/gallery-04.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="box-gallery">
+                    <img src="~/Assets/user/images/gallery-05.jpg" alt="">
+                    <div class="box-content">
+                        <h3 class="title">Lorem ipsum dolor</h3>
+                        <ul class="icon">
+                            <li><a href="~/Assets/user/images/gallery-05.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="box-gallery">
+                    <img src="~/Assets/user/images/gallery-06.jpg" alt="">
+                    <div class="box-content">
+                        <h3 class="title">Lorem ipsum dolor</h3>
+                        <ul class="icon">
+                            <li><a href="~/Assets/user/images/gallery-06.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="box-gallery">
+                    <img src="~/Assets/user/images/gallery-07.jpg" alt="">
+                    <div class="box-content">
+                        <h3 class="title">Lorem ipsum dolor</h3>
+                        <ul class="icon">
+                            <li><a href="~/Assets/user/images/gallery-07.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="box-gallery">
+                    <img src="~/Assets/user/images/gallery-08.jpg" alt="">
+                    <div class="box-content">
+                        <h3 class="title">Lorem ipsum dolor</h3>
+                        <ul class="icon">
+                            <li><a href="~/Assets/user/images/gallery-08.jpg"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Gallery -->
+<!-- Start Team -->
+<div id="team" class="team-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-box">
+                    <h2>Đội ngũ Bác sĩ của chúng tôi</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="~/Assets/user/images/img-1.jpg" alt="">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Williamson</h3>
+                        <span class="post">web developer</span>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="~/Assets/user/images/img-2.jpg" alt="">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">kristina</h3>
+                        <span class="post">Web Designer</span>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="~/Assets/user/images/img-3.jpg" alt="">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="title">Steve Thomas</h3>
+                        <span class="post">web developer</span>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

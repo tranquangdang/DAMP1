@@ -64,6 +64,7 @@
     <Compile Include="DAO\PhieuDangKyTiemChungDAO.cs" />
     <Compile Include="DAO\PhuHuynhDAO.cs" />
     <Compile Include="DAO\SetTiemChungDAO.cs" />
+    <Compile Include="DAO\TreEmDAO.cs" />
     <Compile Include="DAO\VaccineDAO.cs" />
     <Compile Include="EF\Admin.cs" />
     <Compile Include="EF\ChiDinh.cs" />

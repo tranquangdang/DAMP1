@@ -16,6 +16,11 @@ namespace Models.DAO
             db = new WebDbContext();
         }
 
+        public List<GoiTiemChung> ListAll()
+        {
+            return db.GoiTiemChungs.ToList();
+        }
+
         public List<GoiTiemChung> ListAll(int ID)
         {
             return db.GoiTiemChungs.Where(s => s.id_setTiemChung == ID).ToList();
