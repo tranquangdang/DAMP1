@@ -13,9 +13,12 @@ namespace Models.EF
 
         public int id_chiTietLoaiVaccine { get; set; }
 
-        public DateTime ngayHen { get; set; }
+        public DateTime? ngayTiem { get; set; }
 
         [Required]
+        [StringLength(100)]
+        public string trangThai { get; set; }
+
         public string ghiChu { get; set; }
 
         public virtual ChiTietLoaiVaccine ChiTietLoaiVaccine { get; set; }

@@ -57,8 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\AdminDAO.cs" />
+    <Compile Include="DAO\ChiTietLoaiVaccineDAO.cs" />
     <Compile Include="DAO\GoiTiemChungDAO.cs" />
     <Compile Include="DAO\LoaiTiemChungDAO.cs" />
+    <Compile Include="DAO\MuiTiemDAO.cs" />
+    <Compile Include="DAO\PhieuDangKyTiemChungDAO.cs" />
+    <Compile Include="DAO\PhuHuynhDAO.cs" />
     <Compile Include="DAO\SetTiemChungDAO.cs" />
     <Compile Include="DAO\VaccineDAO.cs" />
     <Compile Include="EF\Admin.cs" />

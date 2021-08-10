@@ -135,10 +135,14 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\BaseController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ChiTietLoaiVaccineController.cs" />
     <Compile Include="Areas\Admin\Controllers\GoiTiemChungController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoaiTiemChungController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
+    <Compile Include="Areas\Admin\Controllers\MuiTiemController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PhieuDangKyTiemChungController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PhuHuynhController.cs" />
     <Compile Include="Areas\Admin\Controllers\SetTiemChungController.cs" />
     <Compile Include="Areas\Admin\Controllers\VaccineController.cs" />
     <Compile Include="Areas\Admin\Models\LoginModel.cs" />
@@ -300,6 +304,11 @@
     <Content Include="Areas\Admin\Views\SetTiemChung\Index.cshtml" />
     <Content Include="Areas\Admin\Views\SetTiemChung\Create.cshtml" />
     <Content Include="Areas\Admin\Views\GoiTiemChung\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\PhieuDangKyTiemChung\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ChiTietLoaiVaccine\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\MuiTiem\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\MuiTiem\Update.cshtml" />
+    <Content Include="Areas\Admin\Views\PhuHuynh\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

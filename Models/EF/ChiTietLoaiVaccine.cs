@@ -23,8 +23,6 @@ namespace Models.EF
 
         public int id_vaccine { get; set; }
 
-        public DateTime? ngayTiem { get; set; }
-
         public virtual PhieuDangKyTiemChung PhieuDangKyTiemChung { get; set; }
 
         public virtual GoiTiemChung GoiTiemChung { get; set; }

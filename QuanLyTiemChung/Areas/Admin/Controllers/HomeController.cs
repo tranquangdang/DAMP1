@@ -1,4 +1,5 @@
-﻿using QuanLyTiemChung.Common;
+﻿using Models.DAO;
+using QuanLyTiemChung.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,8 @@ namespace QuanLyTiemChung.Areas.Admin.Controllers
         // GET: Admin/Home
         public ActionResult Index()
         {
+            var phieuDangKyTiemChung = new PhieuDangKyTiemChungDAO();
+            ViewBag.Revenue = phieuDangKyTiemChung.Revenue();
             return View();
         }
 
