@@ -13,7 +13,6 @@ namespace Models.EF
         public Vaccine()
         {
             ChiTietGoiTCs = new HashSet<ChiTietGoiTC>();
-            ChiTietLoaiVaccines = new HashSet<ChiTietLoaiVaccine>();
         }
 
         public int id { get; set; }
@@ -46,8 +45,5 @@ namespace Models.EF
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietGoiTC> ChiTietGoiTCs { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ChiTietLoaiVaccine> ChiTietLoaiVaccines { get; set; }
     }
 }

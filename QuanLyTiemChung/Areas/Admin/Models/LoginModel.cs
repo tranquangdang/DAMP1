@@ -9,8 +9,8 @@ namespace QuanLyTiemChung.Areas.Admin.Models
     public class LoginModel
     {
         [Required]
-        public string Username { get; set; }
+        public string taiKhoan { get; set; }
         [Required]
-        public string Password { get; set; }
+        public string matKhau { get; set; }
     }
 }

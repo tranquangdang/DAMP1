@@ -18,17 +18,17 @@ namespace Models.DAO
 
         public string login(string user, string pass)
         {
-            var result = db.Admins.Any(x => x.Username == user);
+            var result = db.NhanViens.Any(x => x.taiKhoan == user);
             if (!result)
             {
                 return "Không tìm thấy tài khoản này!";
             }
             else
             {
-                var model = db.Admins.SingleOrDefault(x => x.Username.Contains(user) && x.Password.Contains(pass));
+                var model = db.NhanViens.SingleOrDefault(x => x.taiKhoan.Contains(user) && x.matKhau.Contains(pass));
                 if (model != null)
                 {
-                    if (model.Status != 0)
+                    if (model.trangThai != 0)
                     {
                         return "";
                     }

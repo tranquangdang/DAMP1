@@ -34,14 +34,14 @@ namespace Models.DAO
 
         public string login(string taikhoan, string matkhau)
         {
-            var result = db.PhuHuynhs.Any(x => x.taikhoan == taikhoan);
+            var result = db.PhuHuynhs.Any(x => x.taiKhoan == taikhoan);
             if (!result)
             {
                 return "Không tìm thấy tài khoản này!";
             }
             else
             {
-                var model = db.PhuHuynhs.SingleOrDefault(x => x.taikhoan.Contains(taikhoan) && x.matkhau.Contains(matkhau));
+                var model = db.PhuHuynhs.SingleOrDefault(x => x.taiKhoan.Contains(taikhoan) && x.matKhau.Contains(matkhau));
                 if (model != null)
                 {
 

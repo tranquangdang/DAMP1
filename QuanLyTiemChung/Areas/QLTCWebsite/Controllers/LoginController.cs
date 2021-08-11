@@ -22,10 +22,10 @@ namespace QuanLyTiemChung.Areas.QLTCWebsite.Controllers
             if (ModelState.IsValid)
             {
                 var dao = new PhuHuynhDAO();
-                var result = dao.login(user.Username, Encryptor.EncryptMD5(user.Password));
+                var result = dao.login(user.taiKhoan, Encryptor.EncryptMD5(user.matKhau));
                 if (result == "")
                 {
-                    Session.Add(Constants.USER_SESSION, user.Username);
+                    Session.Add(Constants.USER_SESSION, user.taiKhoan);
                     return RedirectToAction("Index", "Home");
                 }
                 else

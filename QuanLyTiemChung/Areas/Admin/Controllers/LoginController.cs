@@ -24,7 +24,7 @@ namespace QuanLyTiemChung.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 var dao = new AdminDAO();
-                var result = dao.login(user.Username, Encryptor.EncryptMD5(user.Password));
+                var result = dao.login(user.taiKhoan, Encryptor.EncryptMD5(user.matKhau));
                 if (result == "")
                 {
                     Session.Add(Constants.USER_SESSION, user);

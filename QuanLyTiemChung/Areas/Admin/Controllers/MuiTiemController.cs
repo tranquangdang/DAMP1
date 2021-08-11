@@ -12,7 +12,8 @@ namespace QuanLyTiemChung.Areas.Admin.Controllers
     public class MuiTiemController : BaseController
     {
         // GET: Admin/MuiTiem
-        private static int ID_mui;
+        private static int id_chiTietGoiTC;
+        private static int id_dangKy;
 
         public List<SelectListItem> getStatusList()
         {
@@ -35,11 +36,12 @@ namespace QuanLyTiemChung.Areas.Admin.Controllers
             return getStatusList;
         }
 
-        public ActionResult Index(int ID)
+        public ActionResult Index(int ID_chiTietGoiTC, int ID_dangKy)
         {
-            ID_mui = ID;
+            id_chiTietGoiTC = ID_chiTietGoiTC;
+            id_dangKy = ID_dangKy;
             var model = new MuiTiemDAO();
-            var list = model.ListAll(ID_mui);
+            var list = model.ListAll(id_chiTietGoiTC, ID_dangKy);
             return View(list.ToPagedList(1, 10));
         }
 
@@ -61,12 +63,13 @@ namespace QuanLyTiemChung.Areas.Admin.Controllers
                 if (ModelState.IsValid)
                 {
                     string result = "";
-                    model.id_chiTietLoaiVaccine = ID_mui;
+                    model.id_chiTietGoiTC = id_chiTietGoiTC;
+                    model.id_dangKy = id_dangKy;
                     result = new MuiTiemDAO().Update(model);
                     if (!string.IsNullOrEmpty(result))
                     {
                         SetAlert("Thành công!", "success");
-                        return RedirectToAction("Index", "MuiTiem", new { ID = ID_mui });
+                        return RedirectToAction("Index", "MuiTiem", new { ID_chiTietGoiTC = id_chiTietGoiTC, ID_dangKy = id_dangKy});
                     }
                     else
                     {

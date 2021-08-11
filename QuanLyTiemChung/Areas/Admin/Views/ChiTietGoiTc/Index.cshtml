@@ -1,6 +1,6 @@
 ﻿@using PagedList;
 @using PagedList.Mvc;
-@model IPagedList<Models.EF.ChiTietLoaiVaccine>
+@model IPagedList<Models.EF.ChiTietGoiTC>
 
 @{
     ViewBag.Title = "Chi tiết phiếu đăng ký tiêm chủng";
@@ -26,7 +26,7 @@
     <table class="table table-striped table-hover table-bordered dataTable sortable">
         <tr>
             <th>
-                Mã Vaccine
+                STT
             </th>
             <th>
                 Tên Vaccine
@@ -37,13 +37,16 @@
             <th>
                 Mũi tiêm
             </th>
+            <th>
+                Trạng thái
+            </th>
         </tr>
-
+        @{var i = 1; }
         @foreach (var item in Model)
         {
             <tr id="row_@item.id">
                 <td>
-                    @Html.DisplayFor(modelItem => item.Vaccine.id)
+                    @i
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Vaccine.ten)
@@ -52,12 +55,12 @@
                     @Html.DisplayFor(modelItem => item.Vaccine.ChiDinh.phongBenh)
                 </td>
                 <td>
-                    <a href="@Url.Action("Index", "MuiTiem", new { @ID = item.id})">
-                        @Html.DisplayFor(modelItem => item.MuiTiems.Count)
-                        Mũi
+                    <a href="@Url.Action("Index", "MuiTiem", new { @ID_chiTietGoiTC = item.id, @id_dangKy = ViewBag.ID_dangKy})">
+                        Chi tiết
                     </a>
                 </td>
             </tr>
+            i++;
         }
     </table>
     <div style="text-align: center">

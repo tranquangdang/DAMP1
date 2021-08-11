@@ -84,9 +84,9 @@
                     @Html.DisplayFor(modelItem => tongTien)
                 </td>
                 <td>
-                    <a href="@Url.Action("Index", "ChiTietLoaiVaccine", new { @ID = item.id})">
-                        @Html.DisplayFor(modelItem => item.ChiTietLoaiVaccines.Count)
-                        Loại vaccine
+                    <a href="@Url.Action("Index", "ChiTietGoiTc", new { @ID = item.id})">
+                        @Html.DisplayFor(modelItem => item.GoiTiemChung.ChiTietGoiTCs.Count)
+                        loại vaccine
                     </a>
                 </td>
                 <td style="text-align:center">

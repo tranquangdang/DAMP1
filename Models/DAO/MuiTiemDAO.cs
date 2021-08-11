@@ -16,9 +16,9 @@ namespace Models.DAO
             db = new WebDbContext();
         }
 
-        public List<MuiTiem> ListAll(int ID)
+        public List<MuiTiem> ListAll(int id_chiTietGoiTC, int id_dangKy)
         {
-            return db.MuiTiems.Where(s => s.id_chiTietLoaiVaccine == ID).ToList();
+            return db.MuiTiems.Where(s => s.id_chiTietGoiTC == id_chiTietGoiTC && s.id_dangKy == id_dangKy).ToList();
         }
 
         public MuiTiem Find(int id)
@@ -29,7 +29,7 @@ namespace Models.DAO
         public string Update(MuiTiem muiTiemEntity)
         {
             var muiTiem = Find(muiTiemEntity.id);
-            muiTiem.id_chiTietLoaiVaccine = muiTiemEntity.id_chiTietLoaiVaccine;
+            muiTiem.id_chiTietGoiTC = muiTiemEntity.id_chiTietGoiTC;
             muiTiem.ngayTiem = muiTiemEntity.ngayTiem;
             muiTiem.trangThai = muiTiemEntity.trangThai;
             muiTiem.ghiChu = muiTiemEntity.ghiChu;

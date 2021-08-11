@@ -48,14 +48,14 @@ else
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label" for="date">Gói Tiêm Chủng</label>
-                                        @Html.DropDownListFor(model => model.ChiTietLoaiVaccines, (IEnumerable<SelectListItem>)ViewBag.GoiTC, "--Chọn Gói tiêm chủng--", new { @class = "form-control" })
+                                        @Html.DropDownListFor(model => model.GoiTiemChung.ChiTietGoiTCs, (IEnumerable<SelectListItem>)ViewBag.GoiTC, "--Chọn Gói tiêm chủng--", new { @class = "form-control" })
                                     </div>
                                 </div>
                                 <!-- Select Basic -->
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="control-label" for="time">Vaccine</label>
-                                        @Html.DropDownListFor(model => model.ChiTietLoaiVaccines, (IEnumerable<SelectListItem>)ViewBag.VC, "--Chọn Vaccine--", new { @class = "form-control" })
+                                        @Html.DropDownListFor(model => model.GoiTiemChung.ChiTietGoiTCs, (IEnumerable<SelectListItem>)ViewBag.VC, "--Chọn Vaccine--", new { @class = "form-control" })
                                     </div>
                                 </div>
                                 <!-- Select Basic -->

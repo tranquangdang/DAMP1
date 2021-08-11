@@ -11,7 +11,11 @@ namespace Models.EF
     {
         public int id { get; set; }
 
-        public int id_chiTietLoaiVaccine { get; set; }
+        public int id_dangKy { get; set; }
+
+        public int id_chiTietGoiTC { get; set; }
+
+        public int id_nhanVien { get; set; }
 
         public DateTime? ngayTiem { get; set; }
 
@@ -21,6 +25,10 @@ namespace Models.EF
 
         public string ghiChu { get; set; }
 
-        public virtual ChiTietLoaiVaccine ChiTietLoaiVaccine { get; set; }
+        public virtual ChiTietGoiTC ChiTietGoiTC { get; set; }
+
+        public virtual PhieuDangKyTiemChung PhieuDangKyTiemChung { get; set; }
+
+        public virtual NhanVien NhanVien { get; set; }
     }
 }

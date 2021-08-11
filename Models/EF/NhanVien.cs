@@ -6,13 +6,14 @@ namespace Models.EF
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("PhuHuynh")]
-    public partial class PhuHuynh
+    [Table("NhanVien")]
+    public partial class NhanVien
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public PhuHuynh()
+        public NhanVien()
         {
-            TreEms = new HashSet<TreEm>();
+            MuiTiems = new HashSet<MuiTiem>();
+            PhieuDangKyTiemChungs = new HashSet<PhieuDangKyTiemChung>();
         }
 
         public int id { get; set; }
@@ -26,8 +27,8 @@ namespace Models.EF
         public string sdt { get; set; }
 
         [Required]
-        [StringLength(20)]
-        public string cmnd { get; set; }
+        [StringLength(100)]
+        public string chucVu { get; set; }
 
         [Required]
         [StringLength(100)]
@@ -37,7 +38,12 @@ namespace Models.EF
         [StringLength(100)]
         public string matKhau { get; set; }
 
+        public byte trangThai { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TreEm> TreEms { get; set; }
+        public virtual ICollection<MuiTiem> MuiTiems { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<PhieuDangKyTiemChung> PhieuDangKyTiemChungs { get; set; }
     }
 }

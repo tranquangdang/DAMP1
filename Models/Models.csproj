@@ -57,7 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\AdminDAO.cs" />
-    <Compile Include="DAO\ChiTietLoaiVaccineDAO.cs" />
+    <Compile Include="DAO\ChiTietGoiTc.cs" />
     <Compile Include="DAO\GoiTiemChungDAO.cs" />
     <Compile Include="DAO\LoaiTiemChungDAO.cs" />
     <Compile Include="DAO\MuiTiemDAO.cs" />
@@ -66,14 +66,13 @@
     <Compile Include="DAO\SetTiemChungDAO.cs" />
     <Compile Include="DAO\TreEmDAO.cs" />
     <Compile Include="DAO\VaccineDAO.cs" />
-    <Compile Include="EF\Admin.cs" />
     <Compile Include="EF\ChiDinh.cs" />
     <Compile Include="EF\ChiTietGoiTC.cs" />
-    <Compile Include="EF\ChiTietLoaiVaccine.cs" />
     <Compile Include="EF\DbContext.cs" />
     <Compile Include="EF\GoiTiemChung.cs" />
     <Compile Include="EF\LoaiTiemChung.cs" />
     <Compile Include="EF\MuiTiem.cs" />
+    <Compile Include="EF\NhanVien.cs" />
     <Compile Include="EF\PhieuDangKyTiemChung.cs" />
     <Compile Include="EF\PhuHuynh.cs" />
     <Compile Include="EF\SetTiemChung.cs" />

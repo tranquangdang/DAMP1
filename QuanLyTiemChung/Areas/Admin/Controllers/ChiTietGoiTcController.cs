@@ -8,16 +8,16 @@ using System.Web.Mvc;
 
 namespace QuanLyTiemChung.Areas.Admin.Controllers
 {
-    public class ChiTietLoaiVaccineController : BaseController
+    public class ChiTietGoiTcController : Controller
     {
-        // GET: Admin/ChiTietLoaiVaccine
-        private static int ID_phieu;
+        private static int id_dangKy;
 
         public ActionResult Index(int ID)
         {
-            ID_phieu = ID;
-            var model = new ChiTietLoaiVaccineDAO();
-            var list = model.ListAll(ID_phieu);
+            id_dangKy = ID;
+            var model = new ChiTietGoiTcDAO();
+            var list = model.ListAll(id_dangKy);
+            ViewBag.ID_dangKy = id_dangKy;
             return View(list.ToPagedList(1, 10));
         }
     }

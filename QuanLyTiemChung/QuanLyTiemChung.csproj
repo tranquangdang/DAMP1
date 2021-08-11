@@ -135,7 +135,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\BaseController.cs" />
-    <Compile Include="Areas\Admin\Controllers\ChiTietLoaiVaccineController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ChiTietGoiTcController.cs" />
     <Compile Include="Areas\Admin\Controllers\GoiTiemChungController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoaiTiemChungController.cs" />
@@ -371,7 +371,6 @@
     <Content Include="Areas\Admin\Views\SetTiemChung\Create.cshtml" />
     <Content Include="Areas\Admin\Views\GoiTiemChung\Index.cshtml" />
     <Content Include="Areas\Admin\Views\PhieuDangKyTiemChung\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\ChiTietLoaiVaccine\Index.cshtml" />
     <Content Include="Areas\Admin\Views\MuiTiem\Index.cshtml" />
     <Content Include="Areas\Admin\Views\MuiTiem\Update.cshtml" />
     <Content Include="Areas\Admin\Views\PhuHuynh\Index.cshtml" />
@@ -388,6 +387,7 @@
     <Content Include="Areas\QLTCWebsite\Views\PhieuDangKy\Index.cshtml" />
     <Content Include="Areas\QLTCWebsite\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\QLTCWebsite\Views\web.config" />
+    <Content Include="Areas\Admin\Views\ChiTietGoiTc\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
