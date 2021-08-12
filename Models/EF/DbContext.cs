@@ -29,20 +29,17 @@ namespace Models.EF
             modelBuilder.Entity<ChiDinh>()
                 .HasMany(e => e.Vaccines)
                 .WithRequired(e => e.ChiDinh)
-                .HasForeignKey(e => e.id_chiDinh)
-                .WillCascadeOnDelete(false);
+                .HasForeignKey(e => e.id_chiDinh);
 
             modelBuilder.Entity<ChiTietGoiTC>()
                 .HasMany(e => e.MuiTiems)
                 .WithRequired(e => e.ChiTietGoiTC)
-                .HasForeignKey(e => e.id_chiTietGoiTC)
-                .WillCascadeOnDelete(false);
+                .HasForeignKey(e => e.id_chiTietGoiTC);
 
             modelBuilder.Entity<GoiTiemChung>()
                 .HasMany(e => e.ChiTietGoiTCs)
                 .WithRequired(e => e.GoiTiemChung)
-                .HasForeignKey(e => e.id_goiTiemChung)
-                .WillCascadeOnDelete(false);
+                .HasForeignKey(e => e.id_goiTiemChung);
 
             modelBuilder.Entity<GoiTiemChung>()
                 .HasMany(e => e.PhieuDangKyTiemChungs)
@@ -53,8 +50,7 @@ namespace Models.EF
             modelBuilder.Entity<LoaiTiemChung>()
                 .HasMany(e => e.SetTiemChungs)
                 .WithRequired(e => e.LoaiTiemChung)
-                .HasForeignKey(e => e.id_loaiTiemChung)
-                .WillCascadeOnDelete(false);
+                .HasForeignKey(e => e.id_loaiTiemChung);
 
             modelBuilder.Entity<NhanVien>()
                 .Property(e => e.sdt)
@@ -75,21 +71,19 @@ namespace Models.EF
 
             modelBuilder.Entity<NhanVien>()
                 .HasMany(e => e.MuiTiems)
-                .WithRequired(e => e.NhanVien)
+                .WithOptional(e => e.NhanVien)
                 .HasForeignKey(e => e.id_nhanVien)
-                .WillCascadeOnDelete(false);
+                .WillCascadeOnDelete();
 
             modelBuilder.Entity<NhanVien>()
                 .HasMany(e => e.PhieuDangKyTiemChungs)
-                .WithRequired(e => e.NhanVien)
-                .HasForeignKey(e => e.id_nhanVien)
-                .WillCascadeOnDelete(false);
+                .WithOptional(e => e.NhanVien)
+                .HasForeignKey(e => e.id_nhanVien);
 
             modelBuilder.Entity<PhieuDangKyTiemChung>()
                 .HasMany(e => e.MuiTiems)
                 .WithRequired(e => e.PhieuDangKyTiemChung)
-                .HasForeignKey(e => e.id_dangKy)
-                .WillCascadeOnDelete(false);
+                .HasForeignKey(e => e.id_dangKy);
 
             modelBuilder.Entity<PhuHuynh>()
                 .Property(e => e.sdt)
@@ -111,14 +105,12 @@ namespace Models.EF
             modelBuilder.Entity<PhuHuynh>()
                 .HasMany(e => e.TreEms)
                 .WithRequired(e => e.PhuHuynh)
-                .HasForeignKey(e => e.id_phuHuynh)
-                .WillCascadeOnDelete(false);
+                .HasForeignKey(e => e.id_phuHuynh);
 
             modelBuilder.Entity<SetTiemChung>()
                 .HasMany(e => e.GoiTiemChungs)
                 .WithRequired(e => e.SetTiemChung)
-                .HasForeignKey(e => e.id_setTiemChung)
-                .WillCascadeOnDelete(false);
+                .HasForeignKey(e => e.id_setTiemChung);
 
             modelBuilder.Entity<TreEm>()
                 .HasMany(e => e.PhieuDangKyTiemChungs)
@@ -133,8 +125,7 @@ namespace Models.EF
             modelBuilder.Entity<Vaccine>()
                 .HasMany(e => e.ChiTietGoiTCs)
                 .WithRequired(e => e.Vaccine)
-                .HasForeignKey(e => e.id_vaccine)
-                .WillCascadeOnDelete(false);
+                .HasForeignKey(e => e.id_vaccine);
         }
     }
 }

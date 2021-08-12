@@ -20,6 +20,15 @@ namespace Models.DAO
         {
             return db.PhieuDangKyTiemChungs.ToList();
         }
+        public List<PhieuDangKyTiemChung> ListNull()
+        {
+            return db.PhieuDangKyTiemChungs.Where(x => x.ngayHen==null).ToList();
+        }
+
+        public object ListWhereAll()
+        {
+            throw new NotImplementedException();
+        }
 
         public PhieuDangKyTiemChung Find(int ID)
         {

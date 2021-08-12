@@ -21,7 +21,13 @@ namespace Models.DAO
         {
             return db.Vaccines.ToList();
         }
-
+   /*      public List<Vaccine> ListHSD()
+        {
+            var nsx = db.Vaccines.
+            var HSD= .ToList();
+            return 
+        }
+   */
         public Vaccine Find(int ProductID)
         {
             return db.Vaccines.Find(ProductID);
@@ -65,6 +71,7 @@ namespace Models.DAO
             }
 
         }
+        
 
         public List<ChiDinh> getChiDinh()
         {

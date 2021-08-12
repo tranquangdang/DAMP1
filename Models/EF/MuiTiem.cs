@@ -15,7 +15,7 @@ namespace Models.EF
 
         public int id_chiTietGoiTC { get; set; }
 
-        public int id_nhanVien { get; set; }
+        public int? id_nhanVien { get; set; }
 
         public DateTime? ngayTiem { get; set; }
 

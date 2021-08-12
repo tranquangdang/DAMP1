@@ -144,6 +144,7 @@
     <Compile Include="Areas\Admin\Controllers\PhieuDangKyTiemChungController.cs" />
     <Compile Include="Areas\Admin\Controllers\PhuHuynhController.cs" />
     <Compile Include="Areas\Admin\Controllers\SetTiemChungController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ThongKeController.cs" />
     <Compile Include="Areas\Admin\Controllers\VaccineController.cs" />
     <Compile Include="Areas\Admin\Models\LoginModel.cs" />
     <Compile Include="Areas\QLTCWebsite\Controllers\HomeController.cs" />
@@ -388,6 +389,7 @@
     <Content Include="Areas\QLTCWebsite\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\QLTCWebsite\Views\web.config" />
     <Content Include="Areas\Admin\Views\ChiTietGoiTc\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ThongKe\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
