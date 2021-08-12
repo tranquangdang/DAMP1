@@ -31,7 +31,7 @@
     <script src="~/Assets/admin/js/jquery2.0.3.min.js"></script>
     <script src="~/Assets/admin/js/raphael-min.js"></script>
     <script src="~/Assets/admin/js/morris.js"></script>
-
+    <link href="~/Content/bootstrap-chosen.css" rel="stylesheet" />
     <link href="~/Assets/admin/js/jquery-ui-1.12.1.custom/jquery-ui.min.css" rel="stylesheet" />
 </head>
 <body>
@@ -70,7 +70,6 @@
                                     {@session.taiKhoan;
                                 }
                                 }
-
                             </span>
                             <b class="caret"></b>
                         </a>
@@ -84,7 +83,6 @@
                         </ul>
                     </li>
                     <!-- user login dropdown end -->
-
                 </ul>
                 <!--search & user info end-->
             </div>
@@ -127,16 +125,16 @@
                             </a>
                         </li>
                         @*<li class="sub-menu">
-                            <a href="javascript:;">
-                                <i class="fa fa-user"></i>
-                                <span>Admin</span>
-                            </a>
-                            <ul class="sub">
-                                <li>
-                                    <a href="@Url.Action("Index", "User")">Quản lý Admin</a>
-                                </li>
-                            </ul>
-                        </li>*@
+                                <a href="javascript:;">
+                                    <i class="fa fa-user"></i>
+                                    <span>Admin</span>
+                                </a>
+                                <ul class="sub">
+                                    <li>
+                                        <a href="@Url.Action("Index", "User")">Quản lý Admin</a>
+                                    </li>
+                                </ul>
+                            </li>*@
                     </ul>
                 </div>
                 <!-- sidebar menu end-->
@@ -165,7 +163,6 @@
                     </div>
                 </div>
             </section>
-
             <div class="modal" tabindex="-1" role="dialog" id="form-modal">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -181,7 +178,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- footer -->
             <div class="footer">
                 <div class="wthree-copyright">
@@ -206,6 +202,20 @@
             $('#AlertBox').delay(5000).slideUp(500);
         });
     </script>
+    <script>
+        $(function () {
+            $('#normalDropDown').chosen({
+                disable_search_threshold: 5
+            });
+
+            //$("#multiSelectDropDown").chosen({
+            //    width: "100%"
+            //});
+        });
+    </script>
+
+
+    <script src="~/Scripts/chosen.jquery.min.js"></script>
     <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
     <script src="~/Assets/admin/js/sorttable.js"></script>
     <script src="~/Assets/admin/js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>

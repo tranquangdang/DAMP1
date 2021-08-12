@@ -22,6 +22,13 @@ namespace Models.DAO
             return db.Vaccines.ToList();
         }
 
+        public List<Vaccine> ListAllEdit()
+        {
+            IQueryable<Vaccine> model = (from s in db.Vaccines select s);
+            return model.ToList();
+        }
+        
+
         public Vaccine Find(int ProductID)
         {
             return db.Vaccines.Find(ProductID);

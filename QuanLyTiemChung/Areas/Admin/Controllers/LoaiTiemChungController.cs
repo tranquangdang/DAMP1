@@ -11,6 +11,7 @@ namespace QuanLyTiemChung.Areas.Admin.Controllers
 {
     public class LoaiTiemChungController : BaseController
     {
+        private WebDbContext db;
         // GET: Admin/LoaiTiemChung
         public ActionResult Index(int page = 1, int pagesize = 10)
         {
@@ -66,6 +67,8 @@ namespace QuanLyTiemChung.Areas.Admin.Controllers
             }
             return View();
         }
+
+       
 
         [HttpDelete]
         public ActionResult Delete(int ID)

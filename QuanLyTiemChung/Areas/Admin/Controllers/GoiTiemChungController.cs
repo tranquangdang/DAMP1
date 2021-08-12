@@ -12,6 +12,7 @@ namespace QuanLyTiemChung.Areas.Admin.Controllers
     public class GoiTiemChungController : BaseController
     {
         private static int ID_set;
+        private static int ID_goi;
 
         // GET: Admin/GoiTiemChung
         public ActionResult Index(int ID)
@@ -70,6 +71,14 @@ namespace QuanLyTiemChung.Areas.Admin.Controllers
                 throw;
             }
             return View();
+        }       
+        
+        [HttpDelete]
+        public ActionResult DeleteVaccine(int ID)
+        {
+            var model = new ChiTietGoiTcDAO();
+            model.Delete(ID);
+            return RedirectToAction("Index");
         }
 
         [HttpDelete]
@@ -79,5 +88,74 @@ namespace QuanLyTiemChung.Areas.Admin.Controllers
             model.Delete(ID);
             return RedirectToAction("Index");
         }
+
+        public void SetViewBag(string selectedId = null)
+        {
+            var vaccine = new VaccineDAO();
+            ViewBag.vaccine = new SelectList(vaccine.ListAll(), "id", "ten", selectedId);
+
+        }
+       private WebDbContext db;
+        public ActionResult EditVaccine(int goitiem)
+        {
+            SetViewBag();
+            var model = new GoiTiemChungDAO();
+            ViewBag.tenSetTC = model.getTenSetTC(ID_set);
+
+            var vaccine = new ChiTietGoiTcDAO();
+            var modelVaccine = vaccine.ListVaccine(goitiem);
+            ID_goi = goitiem;
+            //ChiTietGoiTC vaccine = new ChiTietGoiTC();
+            //    vaccine = db.ChiTietGoiTCs.Where(x => x.id_goiTiemChung == goitiem).FirstOrDefault();
+            return View(modelVaccine);
+        }
+
+        [HttpPost]
+        public ActionResult EditVaccine(ChiTietGoiTC model)
+        {
+            //model.id_vaccine = string.Join(",",model.SelectedVaccineArray)
+            try
+            {
+                
+                if (ModelState.IsValid)
+                {
+                    string result = "";
+                  model.id_goiTiemChung = ID_goi;
+                    result = new ChiTietGoiTcDAO().Insert(model);
+                    if (!string.IsNullOrEmpty(result))
+                    {
+                        SetAlert("Thành công!", "success");
+                        return RedirectToAction("EditVaccine", "GoiTiemChung", new { goitiem = ID_goi });
+                    }
+                    else
+                    {
+                        SetAlert("Lỗi", "error");
+                    }
+                }
+                else
+                {
+                    SetAlert("Lỗi", "error");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            return View();
+        }
+
+        public bool IsExist(int idVaccine)
+        {
+            var listVaccine = from s in db.ChiTietGoiTCs where s.id_goiTiemChung == ID_goi select s;
+            foreach (var i in listVaccine)
+            {
+                if (i.id_goiTiemChung == ID_goi && i.id_vaccine == idVaccine)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
     }
 }
