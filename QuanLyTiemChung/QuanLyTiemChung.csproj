@@ -388,6 +388,7 @@
     <Content Include="Areas\QLTCWebsite\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\QLTCWebsite\Views\web.config" />
     <Content Include="Areas\Admin\Views\ChiTietGoiTc\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\PhieuDangKyTiemChung\Book.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

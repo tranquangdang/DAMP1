@@ -25,8 +25,9 @@ namespace QuanLyTiemChung.Areas.Admin.Controllers
             {
                 var dao = new AdminDAO();
                 var result = dao.login(user.taiKhoan, Encryptor.EncryptMD5(user.matKhau));
-                if (result == "")
+                if (int.TryParse(result, out int value))
                 {
+                    user.id = value;
                     Session.Add(Constants.USER_SESSION, user);
                     return RedirectToAction("Index", "Home");
                 }

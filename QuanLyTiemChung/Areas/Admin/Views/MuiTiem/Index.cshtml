@@ -27,8 +27,18 @@
                 Ghi chú
             </th>
             <th>
-                Cập nhật
+                Người tiêm
             </th>
+            @foreach (var item in Model)
+            {
+                if (item.PhieuDangKyTiemChung.ngayHen != null)
+                {
+                    <th>
+                        Cập nhật
+                    </th>
+                }
+                break;
+            }
         </tr>
         @{var i = 1; }
         @foreach (var item in Model)
@@ -47,8 +57,14 @@
                     @Html.DisplayFor(modelItem => item.ghiChu)
                 </td>
                 <td>
-                    <a href="@Url.Action("Update", "MuiTiem", new { @str = item.id})"><i class="glyphicon glyphicon-pencil"></i></a>
+                    @Html.DisplayFor(modelItem => item.NhanVien.ten)
                 </td>
+                @if (item.PhieuDangKyTiemChung.ngayHen != null)
+                {
+                    <td>
+                        <a href="@Url.Action("Update", "MuiTiem", new { @str = item.id})"><i class="glyphicon glyphicon-pencil"></i></a>
+                    </td>
+                }
             </tr>
             i++;
         }

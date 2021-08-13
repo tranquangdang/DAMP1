@@ -1,4 +1,5 @@
-﻿using QuanLyTiemChung.Areas.Admin.Models;
+﻿using Models.DAO;
+using QuanLyTiemChung.Areas.Admin.Models;
 using QuanLyTiemChung.Common;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,8 @@ namespace QuanLyTiemChung.Areas.Admin.Controllers
 {
     public class BaseController : Controller
     {
+        
+
         protected override void OnActionExecuted(ActionExecutedContext filterContext)
         {
             var session = (LoginModel)Session[Constants.USER_SESSION];

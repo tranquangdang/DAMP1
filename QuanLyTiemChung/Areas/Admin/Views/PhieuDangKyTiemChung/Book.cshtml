@@ -1,0 +1,51 @@
+﻿@model Models.EF.PhieuDangKyTiemChung
+@using QuanLyTiemChung.Areas.Admin.Models;
+@using QuanLyTiemChung.Common;
+
+@{
+    ViewBag.Title = "Đặt hẹn";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section header{
+    <i class="fa fa-save"></i>&nbsp;Đặt hẹn
+}
+
+@using (Html.BeginForm("Book", "PhieuDangKyTiemChung", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <div class="col-lg-12 form-group">
+            @Html.HiddenFor(model => model.id)
+            @{
+                var session = (LoginModel)Session[Constants.USER_SESSION];
+            }
+            @Html.HiddenFor(model => model.id_nhanVien, new { @Value = @session.id })
+
+            <div class="form-group">
+                <label class="control-label col-md-2">Ngày hẹn:</label>
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.ngayHen, "{0:dd-MM-yyyy}", new { @class = "form-control disable datepicker" })
+                    <script>
+                        $(function () {
+                            $(".datepicker").datepicker({
+                                changeMonth: true,
+                                changeYear: true,
+                                maxDate: '0'
+                            });
+                        });
+                    </script>
+                    @Html.ValidationMessageFor(model => model.ngayHen, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Đặt hẹn" class="btn btn-primary" />
+                    @Html.ActionLink("Quay lại", "Index", new { controller = "PhieuDangKyTiemChung" }, new { @class = "btn btn-default" })
+                </div>
+            </div>
+        </div>
+    </div>
+}

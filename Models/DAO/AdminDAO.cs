@@ -30,7 +30,7 @@ namespace Models.DAO
                 {
                     if (model.trangThai != 0)
                     {
-                        return "";
+                        return db.NhanViens.SingleOrDefault(x => x.taiKhoan.Contains(user) && x.matKhau.Contains(pass)).id.ToString();
                     }
                     else
                     {

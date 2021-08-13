@@ -49,6 +49,9 @@
                 Ngày hẹn
             </th>
             <th>
+                Người duyệt
+            </th>
+            <th>
                 Tổng tiền
             </th>
             <th>
@@ -75,7 +78,19 @@
                     @Html.DisplayFor(modelItem => item.ngayYeuCau)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.ngayHen)
+                    @if (item.ngayHen != null)
+                    {
+                        @Html.DisplayFor(modelItem => item.ngayHen);
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Book", "PhieuDangKyTiemChung", new { @ID = item.id})" class = "btn btn-danger">
+                            Đặt hẹn
+                        </a>
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NhanVien.ten)                
                 </td>
                 <td>
                     @{

@@ -29,16 +29,8 @@ namespace Models.DAO
         public string Insert(PhieuDangKyTiemChung entity)
         {
             var phieuTC = Find(entity.id);
-            if (phieuTC == null)
-            {
-                db.PhieuDangKyTiemChungs.Add(entity);
-            }
-            else
-            {
-                phieuTC.id_treEm = entity.id_treEm;
-                phieuTC.ngayYeuCau = entity.ngayYeuCau;
-                phieuTC.ngayHen = entity.ngayHen;
-            }
+            phieuTC.ngayHen = entity.ngayHen;
+            phieuTC.id_nhanVien = entity.id_nhanVien;
             db.SaveChanges();
             return entity.id.ToString();
         }
@@ -56,7 +48,6 @@ namespace Models.DAO
             {
                 return false;
             }
-
         }
 
         public string Revenue()
