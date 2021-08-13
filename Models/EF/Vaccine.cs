@@ -45,7 +45,5 @@ namespace Models.EF
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietGoiTC> ChiTietGoiTCs { get; set; }
-
-        
     }
 }

@@ -1,273 +1,89 @@
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\obj\Debug\QuanLyTiemChung.csprojAssemblyReference.cache
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\obj\Debug\QuanLyTiemChung.csproj.CoreCompileInputs.cache
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\QuanLyTiemChung.dll.config
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\QuanLyTiemChung.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\QuanLyTiemChung.pdb
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\csc.exe
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\csc.exe.config
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\csc.rsp
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\csi.exe
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\csi.exe.config
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\csi.rsp
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\Microsoft.Managed.Core.targets
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\Microsoft.Win32.Primitives.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.AppContext.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.Collections.Immutable.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.Console.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.Diagnostics.StackTrace.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.Globalization.Calendars.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.IO.Compression.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.IO.Compression.ZipFile.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.IO.FileSystem.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.IO.FileSystem.Primitives.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.Net.Http.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.Net.Sockets.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.Reflection.Metadata.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.Security.Cryptography.Encoding.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.Security.Cryptography.Primitives.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.Text.Encoding.CodePages.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.Threading.Tasks.Extensions.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.ValueTuple.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.Xml.ReaderWriter.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.Xml.XmlDocument.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.Xml.XPath.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\System.Xml.XPath.XDocument.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\vbc.exe
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\vbc.exe.config
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\vbc.rsp
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\VBCSCompiler.exe
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\roslyn\VBCSCompiler.exe.config
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\Antlr3.Runtime.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\EntityFramework.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\EntityFramework.SqlServer.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\Microsoft.Web.Infrastructure.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\Models.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\Newtonsoft.Json.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\System.Web.Helpers.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\System.Web.Mvc.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\System.Web.Optimization.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\System.Web.Razor.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\System.Web.WebPages.Deployment.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\System.Web.WebPages.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\System.Web.WebPages.Razor.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\WebGrease.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\Models.pdb
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\Models.dll.config
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\EntityFramework.xml
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\EntityFramework.SqlServer.xml
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\System.Web.Helpers.xml
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\System.Web.Mvc.xml
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\System.Web.Optimization.xml
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\System.Web.Razor.xml
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\System.Web.WebPages.xml
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\System.Web.WebPages.Deployment.xml
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\System.Web.WebPages.Razor.xml
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\Newtonsoft.Json.xml
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\Antlr3.Runtime.pdb
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\obj\Debug\QuanLyTiemChung.csproj.CopyComplete
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\obj\Debug\QuanLyTiemChung.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\obj\Debug\QuanLyTiemChung.pdb
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\PagedList.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\PagedList.Mvc.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\PagedList.xml
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\PagedList.Mvc.xml
-<<<<<<< HEAD
-D:\DAPM\QuanLyTiemChung\bin\QuanLyTiemChung.dll.config
-D:\DAPM\QuanLyTiemChung\bin\QuanLyTiemChung.dll
-D:\DAPM\QuanLyTiemChung\bin\QuanLyTiemChung.pdb
-D:\DAPM\QuanLyTiemChung\bin\roslyn\csc.exe
-D:\DAPM\QuanLyTiemChung\bin\roslyn\csc.exe.config
-D:\DAPM\QuanLyTiemChung\bin\roslyn\csc.rsp
-D:\DAPM\QuanLyTiemChung\bin\roslyn\csi.exe
-D:\DAPM\QuanLyTiemChung\bin\roslyn\csi.exe.config
-D:\DAPM\QuanLyTiemChung\bin\roslyn\csi.rsp
-D:\DAPM\QuanLyTiemChung\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\DAPM\QuanLyTiemChung\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\Microsoft.Managed.Core.targets
-D:\DAPM\QuanLyTiemChung\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\DAPM\QuanLyTiemChung\bin\roslyn\Microsoft.Win32.Primitives.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.AppContext.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.Collections.Immutable.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.Console.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.Diagnostics.StackTrace.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.Globalization.Calendars.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.IO.Compression.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.IO.Compression.ZipFile.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.IO.FileSystem.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.IO.FileSystem.Primitives.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.Net.Http.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.Net.Sockets.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.Reflection.Metadata.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.Security.Cryptography.Encoding.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.Security.Cryptography.Primitives.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.Text.Encoding.CodePages.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.Threading.Tasks.Extensions.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.ValueTuple.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.Xml.ReaderWriter.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.Xml.XmlDocument.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.Xml.XPath.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\System.Xml.XPath.XDocument.dll
-D:\DAPM\QuanLyTiemChung\bin\roslyn\vbc.exe
-D:\DAPM\QuanLyTiemChung\bin\roslyn\vbc.exe.config
-D:\DAPM\QuanLyTiemChung\bin\roslyn\vbc.rsp
-D:\DAPM\QuanLyTiemChung\bin\roslyn\VBCSCompiler.exe
-D:\DAPM\QuanLyTiemChung\bin\roslyn\VBCSCompiler.exe.config
-D:\DAPM\QuanLyTiemChung\bin\Antlr3.Runtime.dll
-D:\DAPM\QuanLyTiemChung\bin\EntityFramework.dll
-D:\DAPM\QuanLyTiemChung\bin\EntityFramework.SqlServer.dll
-D:\DAPM\QuanLyTiemChung\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\DAPM\QuanLyTiemChung\bin\Microsoft.Web.Infrastructure.dll
-D:\DAPM\QuanLyTiemChung\bin\Models.dll
-D:\DAPM\QuanLyTiemChung\bin\Newtonsoft.Json.dll
-D:\DAPM\QuanLyTiemChung\bin\PagedList.dll
-D:\DAPM\QuanLyTiemChung\bin\PagedList.Mvc.dll
-D:\DAPM\QuanLyTiemChung\bin\System.Web.Helpers.dll
-D:\DAPM\QuanLyTiemChung\bin\System.Web.Mvc.dll
-D:\DAPM\QuanLyTiemChung\bin\System.Web.Optimization.dll
-D:\DAPM\QuanLyTiemChung\bin\System.Web.Razor.dll
-D:\DAPM\QuanLyTiemChung\bin\System.Web.WebPages.Deployment.dll
-D:\DAPM\QuanLyTiemChung\bin\System.Web.WebPages.dll
-D:\DAPM\QuanLyTiemChung\bin\System.Web.WebPages.Razor.dll
-D:\DAPM\QuanLyTiemChung\bin\WebGrease.dll
-D:\DAPM\QuanLyTiemChung\bin\Models.pdb
-D:\DAPM\QuanLyTiemChung\bin\Models.dll.config
-D:\DAPM\QuanLyTiemChung\bin\EntityFramework.xml
-D:\DAPM\QuanLyTiemChung\bin\EntityFramework.SqlServer.xml
-D:\DAPM\QuanLyTiemChung\bin\PagedList.xml
-D:\DAPM\QuanLyTiemChung\bin\PagedList.Mvc.xml
-D:\DAPM\QuanLyTiemChung\bin\System.Web.Helpers.xml
-D:\DAPM\QuanLyTiemChung\bin\System.Web.Mvc.xml
-D:\DAPM\QuanLyTiemChung\bin\System.Web.Optimization.xml
-D:\DAPM\QuanLyTiemChung\bin\System.Web.Razor.xml
-D:\DAPM\QuanLyTiemChung\bin\System.Web.WebPages.xml
-D:\DAPM\QuanLyTiemChung\bin\System.Web.WebPages.Deployment.xml
-D:\DAPM\QuanLyTiemChung\bin\System.Web.WebPages.Razor.xml
-D:\DAPM\QuanLyTiemChung\bin\Newtonsoft.Json.xml
-D:\DAPM\QuanLyTiemChung\bin\Antlr3.Runtime.pdb
-D:\DAPM\QuanLyTiemChung\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\DAPM\QuanLyTiemChung\obj\Debug\QuanLyTiemChung.csproj.AssemblyReference.cache
-D:\DAPM\QuanLyTiemChung\obj\Debug\QuanLyTiemChung.csproj.CoreCompileInputs.cache
-D:\DAPM\QuanLyTiemChung\obj\Debug\QuanLyTiemChung.csproj.CopyComplete
-D:\DAPM\QuanLyTiemChung\obj\Debug\QuanLyTiemChung.dll
-D:\DAPM\QuanLyTiemChung\obj\Debug\QuanLyTiemChung.pdb
-=======
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\QuanLyTiemChung.dll.config
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\QuanLyTiemChung.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\QuanLyTiemChung.pdb
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\csc.exe
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\csc.exe.config
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\csc.rsp
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\csi.exe
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\csi.exe.config
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\csi.rsp
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\Microsoft.CodeAnalysis.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\Microsoft.CSharp.Core.targets
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\Microsoft.Managed.Core.targets
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\Microsoft.VisualBasic.Core.targets
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\Microsoft.Win32.Primitives.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.AppContext.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.Collections.Immutable.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.Console.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.Diagnostics.StackTrace.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.Globalization.Calendars.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.IO.Compression.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.IO.Compression.ZipFile.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.IO.FileSystem.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.IO.FileSystem.Primitives.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.Net.Http.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.Net.Sockets.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.Reflection.Metadata.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.Security.Cryptography.Encoding.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.Security.Cryptography.Primitives.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.Text.Encoding.CodePages.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.Threading.Tasks.Extensions.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.ValueTuple.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.Xml.ReaderWriter.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.Xml.XmlDocument.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.Xml.XPath.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\System.Xml.XPath.XDocument.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\vbc.exe
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\vbc.exe.config
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\vbc.rsp
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\VBCSCompiler.exe
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\roslyn\VBCSCompiler.exe.config
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\Antlr3.Runtime.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\EntityFramework.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\EntityFramework.SqlServer.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\Microsoft.Web.Infrastructure.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\Models.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\Newtonsoft.Json.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\PagedList.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\PagedList.Mvc.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\System.Web.Helpers.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\System.Web.Mvc.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\System.Web.Optimization.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\System.Web.Razor.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\System.Web.WebPages.Deployment.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\System.Web.WebPages.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\System.Web.WebPages.Razor.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\WebGrease.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\Models.pdb
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\Models.dll.config
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\EntityFramework.xml
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\EntityFramework.SqlServer.xml
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\PagedList.xml
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\PagedList.Mvc.xml
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\System.Web.Helpers.xml
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\System.Web.Mvc.xml
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\System.Web.Optimization.xml
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\System.Web.Razor.xml
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\System.Web.WebPages.xml
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\System.Web.WebPages.Deployment.xml
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\System.Web.WebPages.Razor.xml
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\Newtonsoft.Json.xml
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\Antlr3.Runtime.pdb
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\obj\Debug\QuanLyTiemChung.csprojAssemblyReference.cache
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\obj\Debug\QuanLyTiemChung.csproj.CoreCompileInputs.cache
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\obj\Debug\QuanLyTiemChung.csproj.CopyComplete
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\obj\Debug\QuanLyTiemChung.dll
-F:\Desktop\DAMP1-main (1)\DAMP1-main\QuanLyTiemChung\obj\Debug\QuanLyTiemChung.pdb
->>>>>>> 06f6c9b23a3fe94a6a73a9331c574e66590c395b
+D:\Temp\DAMP1\QuanLyTiemChung\bin\QuanLyTiemChung.dll.config
+D:\Temp\DAMP1\QuanLyTiemChung\bin\QuanLyTiemChung.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\QuanLyTiemChung.pdb
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\csc.exe
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\csc.exe.config
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\csc.rsp
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\csi.exe
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\csi.exe.config
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\csi.rsp
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.AppContext.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.Collections.Immutable.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.Console.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.Globalization.Calendars.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.IO.Compression.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.IO.FileSystem.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.Net.Http.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.Net.Sockets.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.Reflection.Metadata.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.ValueTuple.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.Xml.XPath.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\vbc.exe
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\vbc.exe.config
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\vbc.rsp
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\VBCSCompiler.exe
+D:\Temp\DAMP1\QuanLyTiemChung\bin\roslyn\VBCSCompiler.exe.config
+D:\Temp\DAMP1\QuanLyTiemChung\bin\Antlr3.Runtime.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\EntityFramework.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\EntityFramework.SqlServer.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\Microsoft.Web.Infrastructure.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\Models.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\Newtonsoft.Json.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\PagedList.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\PagedList.Mvc.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\System.Web.Helpers.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\System.Web.Mvc.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\System.Web.Optimization.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\System.Web.Razor.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\System.Web.WebPages.Deployment.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\System.Web.WebPages.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\System.Web.WebPages.Razor.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\WebGrease.dll
+D:\Temp\DAMP1\QuanLyTiemChung\bin\Models.pdb
+D:\Temp\DAMP1\QuanLyTiemChung\bin\Models.dll.config
+D:\Temp\DAMP1\QuanLyTiemChung\bin\EntityFramework.xml
+D:\Temp\DAMP1\QuanLyTiemChung\bin\EntityFramework.SqlServer.xml
+D:\Temp\DAMP1\QuanLyTiemChung\bin\PagedList.xml
+D:\Temp\DAMP1\QuanLyTiemChung\bin\PagedList.Mvc.xml
+D:\Temp\DAMP1\QuanLyTiemChung\bin\System.Web.Helpers.xml
+D:\Temp\DAMP1\QuanLyTiemChung\bin\System.Web.Mvc.xml
+D:\Temp\DAMP1\QuanLyTiemChung\bin\System.Web.Optimization.xml
+D:\Temp\DAMP1\QuanLyTiemChung\bin\System.Web.Razor.xml
+D:\Temp\DAMP1\QuanLyTiemChung\bin\System.Web.WebPages.xml
+D:\Temp\DAMP1\QuanLyTiemChung\bin\System.Web.WebPages.Deployment.xml
+D:\Temp\DAMP1\QuanLyTiemChung\bin\System.Web.WebPages.Razor.xml
+D:\Temp\DAMP1\QuanLyTiemChung\bin\Newtonsoft.Json.xml
+D:\Temp\DAMP1\QuanLyTiemChung\bin\Antlr3.Runtime.pdb
+D:\Temp\DAMP1\QuanLyTiemChung\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Temp\DAMP1\QuanLyTiemChung\obj\Debug\QuanLyTiemChung.csproj.CoreCompileInputs.cache
+D:\Temp\DAMP1\QuanLyTiemChung\obj\Debug\QuanLyTiemChung.csproj.CopyComplete
+D:\Temp\DAMP1\QuanLyTiemChung\obj\Debug\QuanLyTiemChung.dll
+D:\Temp\DAMP1\QuanLyTiemChung\obj\Debug\QuanLyTiemChung.pdb

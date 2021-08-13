@@ -29,11 +29,5 @@ namespace Models.EF
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MuiTiem> MuiTiems { get; set; }
-
-        [NotMapped]
-        public IEnumerable<Vaccine> VaccineCollection { get; set; }
-
-        [NotMapped]
-        public string[] SelectedVaccineArray { get; set; }
     }
 }
