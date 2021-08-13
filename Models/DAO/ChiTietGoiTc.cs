@@ -28,5 +28,39 @@ namespace Models.DAO
                     where p.id == ID
                     select c).ToList();
         }
+        public List<ChiTietGoiTC> ListVaccine(int goitiem)
+        {
+            IQueryable<ChiTietGoiTC> model = (from s in db.ChiTietGoiTCs where s.id_goiTiemChung == goitiem select s);
+            return model.ToList();
+        }
+
+        public ChiTietGoiTC Find(int ID)
+        {
+            return db.ChiTietGoiTCs.Find(ID);
+        }
+
+        public string Insert(ChiTietGoiTC entity)
+        {            
+            ChiTietGoiTC chitietTC = new ChiTietGoiTC();        
+                db.ChiTietGoiTCs.Add(entity);        
+            db.SaveChanges();
+            return entity.id.ToString();
+        }
+
+        public bool Delete(int ID)
+        {
+            try
+            {
+                var vaccine = Find(ID);
+                db.ChiTietGoiTCs.Remove(vaccine);
+                db.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
     }
 }

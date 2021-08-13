@@ -59,6 +59,8 @@ D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\Microsoft.CodeDom.Providers.D
 D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\Microsoft.Web.Infrastructure.dll
 D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\Models.dll
 D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\Newtonsoft.Json.dll
+D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\PagedList.dll
+D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\PagedList.Mvc.dll
 D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\System.Web.Helpers.dll
 D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\System.Web.Mvc.dll
 D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\System.Web.Optimization.dll
@@ -71,6 +73,8 @@ D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\Models.pdb
 D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\Models.dll.config
 D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\EntityFramework.xml
 D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\EntityFramework.SqlServer.xml
+D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\PagedList.xml
+D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\PagedList.Mvc.xml
 D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\System.Web.Helpers.xml
 D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\System.Web.Mvc.xml
 D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\System.Web.Optimization.xml
@@ -84,7 +88,3 @@ D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\Microsoft.CodeDom.Providers.D
 D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\obj\Debug\QuanLyTiemChung.csproj.CopyComplete
 D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\obj\Debug\QuanLyTiemChung.dll
 D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\obj\Debug\QuanLyTiemChung.pdb
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\PagedList.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\PagedList.Mvc.dll
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\PagedList.xml
-D:\OneDrive\Projects\DAPM\DAMP\QuanLyTiemChung\bin\PagedList.Mvc.xml

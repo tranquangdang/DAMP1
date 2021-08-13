@@ -54,7 +54,7 @@
                     loại vaccine
                 </td>
                 <td style="text-align:center">
-                    <a href="@Url.Action("Create", "GoiTiemChung", new { @str = item.id})"><i class="glyphicon glyphicon-pencil"></i></a>
+                    <a href="@Url.Action("EditVaccine", "GoiTiemChung", new { @goitiem = item.id})"><i class="glyphicon glyphicon-pencil"></i></a>
                     <hr />
                     @Ajax.ActionLink(" ", "Delete", new { ID = item.id }, new AjaxOptions
                        {

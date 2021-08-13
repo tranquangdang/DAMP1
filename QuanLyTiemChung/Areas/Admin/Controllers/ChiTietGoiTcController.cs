@@ -20,5 +20,14 @@ namespace QuanLyTiemChung.Areas.Admin.Controllers
             ViewBag.ID_dangKy = id_dangKy;
             return View(list.ToPagedList(1, 10));
         }
+
+        public void SetViewBag(string selectedId = null)
+        {
+            var vaccine = new VaccineDAO();
+            ViewBag.vaccine = new SelectList(vaccine.ListAll(), "id", "ten", selectedId);
+
+        }
+
+        
     }
 }

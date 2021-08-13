@@ -8,13 +8,13 @@ using System.Web.Mvc;
 
 namespace QuanLyTiemChung.Areas.Admin.Controllers
 {
-    public class VaccineController : BaseController
+    public class ThongKeController : BaseController
     {
-        // GET: Admin/Vaccine
+        // GET: Admin/ThongKe
         public ActionResult Index(int page = 1, int pagesize = 10)
         {
-            var model = new VaccineDAO().ListAll();
-            return View(model.ToPagedList(page, pagesize));
-        }
+            var model = new PhieuDangKyTiemChungDAO().ListNull();
+                return View(model.ToPagedList(page, pagesize));
+         }
     }
 }
