@@ -13,11 +13,11 @@
         <label>Chọn Vaccine cho gói tiêm</label>
         @*Normal DropDown*@
         @Html.DropDownList("id_vaccine", (IEnumerable<SelectListItem>)ViewBag.vaccine, new { id = "normalDropDown" })
+        <label>Liều dùng</label>
+        @Html.Editor("lieu", new { htmlAttributes = new { @class = "form-control", @required = "", @min = "1", @type = "number",  @style = "width: 70px; display:unset; " } })
         @*MultiSelect DropDown*@
         @* @Html.ListBoxFor(model => model.SelectedVaccineArray, (IEnumerable<SelectListItem>)ViewBag.vaccine, new { id = "multiSelectDropDown", multiple = "multiple" })*@
-
         <input type="submit" name="name" value="Thêm vào gói" class="btn btn-danger" />
-
     </div>
 
 }
@@ -33,28 +33,33 @@
                 Tên Vaccine
             </th>
             <th>
+                Liều dùng
+            </th>
+            <th>
                 Thao tác
             </th>
         </tr>
         @foreach (var item in Model)
         {
-            <tr id="row_@item.id">
-                <td>
-                    @Html.DisplayFor(modelItem => item.id_vaccine)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Vaccine.ten)
-                </td>
-                <td style="text-align:center">
-
-                    @Ajax.ActionLink(" ", "DeleteVaccine", new { ID = item.id }, new AjaxOptions
-               {
-                   Confirm = "Bạn có muốn xóa Vaccine " + @item.id_vaccine + " ra khỏi gói?",
-                   OnComplete = "$('#row_" + @item.id + "').remove()",
-                   HttpMethod = "Delete"
-               }, new { @class = "glyphicon glyphicon-trash" })
-                </td>
-            </tr>
+        <tr id="row_@item.id">
+            <td>
+                @Html.DisplayFor(modelItem => item.id_vaccine)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vaccine.ten)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.lieu)
+            </td>
+            <td style="text-align:center">
+                @Ajax.ActionLink(" ", "DeleteVaccine", new { ID = item.id }, new AjaxOptions
+           {
+               Confirm = "Bạn có muốn xóa Vaccine " + @item.id_vaccine + " ra khỏi gói?",
+               OnComplete = "$('#row_" + @item.id + "').remove()",
+               HttpMethod = "Delete"
+           }, new { @class = "glyphicon glyphicon-trash" })
+            </td>
+        </tr>
         }
     </table>
 </div>

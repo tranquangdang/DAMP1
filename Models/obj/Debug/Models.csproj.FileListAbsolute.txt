@@ -13,3 +13,19 @@ D:\OneDrive\Projects\DAPM\DAMP\Models\obj\Debug\Models.csproj.CoreCompileInputs.
 D:\OneDrive\Projects\DAPM\DAMP\Models\obj\Debug\Models.csproj.CopyComplete
 D:\OneDrive\Projects\DAPM\DAMP\Models\obj\Debug\Models.dll
 D:\OneDrive\Projects\DAPM\DAMP\Models\obj\Debug\Models.pdb
+F:\Desktop\DAMP1-main (3)\DAMP1-main\Models\bin\Debug\Models.dll.config
+F:\Desktop\DAMP1-main (3)\DAMP1-main\Models\bin\Debug\Models.dll
+F:\Desktop\DAMP1-main (3)\DAMP1-main\Models\bin\Debug\Models.pdb
+F:\Desktop\DAMP1-main (3)\DAMP1-main\Models\bin\Debug\EntityFramework.dll
+F:\Desktop\DAMP1-main (3)\DAMP1-main\Models\bin\Debug\EntityFramework.SqlServer.dll
+F:\Desktop\DAMP1-main (3)\DAMP1-main\Models\bin\Debug\PagedList.dll
+F:\Desktop\DAMP1-main (3)\DAMP1-main\Models\bin\Debug\PagedList.Mvc.dll
+F:\Desktop\DAMP1-main (3)\DAMP1-main\Models\bin\Debug\EntityFramework.xml
+F:\Desktop\DAMP1-main (3)\DAMP1-main\Models\bin\Debug\EntityFramework.SqlServer.xml
+F:\Desktop\DAMP1-main (3)\DAMP1-main\Models\bin\Debug\PagedList.xml
+F:\Desktop\DAMP1-main (3)\DAMP1-main\Models\bin\Debug\PagedList.Mvc.xml
+F:\Desktop\DAMP1-main (3)\DAMP1-main\Models\obj\Debug\Models.csprojAssemblyReference.cache
+F:\Desktop\DAMP1-main (3)\DAMP1-main\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+F:\Desktop\DAMP1-main (3)\DAMP1-main\Models\obj\Debug\Models.csproj.CopyComplete
+F:\Desktop\DAMP1-main (3)\DAMP1-main\Models\obj\Debug\Models.dll
+F:\Desktop\DAMP1-main (3)\DAMP1-main\Models\obj\Debug\Models.pdb
