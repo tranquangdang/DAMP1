@@ -300,10 +300,13 @@
     <Content Include="Assets\user\js\TweenMax.min.js" />
     <Content Include="Assets\user\login\style.css" />
     <Content Include="Assets\user\php\form-process.php" />
+    <Content Include="Content\bootstrap-chosen.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\chosen-sprite%402x.png" />
+    <Content Include="Content\chosen-sprite.png" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
@@ -389,8 +392,16 @@
     <Content Include="Areas\QLTCWebsite\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\QLTCWebsite\Views\web.config" />
     <Content Include="Areas\Admin\Views\ChiTietGoiTc\Index.cshtml" />
+<<<<<<< HEAD
     <Content Include="Areas\Admin\Views\ThongKe\Index.cshtml" />
+=======
+    <Content Include="Areas\Admin\Views\GoiTiemChung\EditVaccine.cshtml" />
+    <Content Include="Content\bootstrap-chosen.scss" />
+    <Content Include="Content\bootstrap-chosen.less" />
+>>>>>>> 06f6c9b23a3fe94a6a73a9331c574e66590c395b
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\chosen.jquery.js" />
+    <Content Include="Scripts\chosen.jquery.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
