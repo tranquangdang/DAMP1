@@ -16,8 +16,8 @@
         {
             @Html.AntiForgeryToken()
             @Html.ValidationSummary(true, null, new { @class = "alert alert-danger" })           
-            @Html.TextBoxFor(model => model.Username, new { @id = "login", @class = "ggg", @placeholder = "Tài khoản", @autofocus = "autofocus" })
-            @Html.TextBoxFor(model => model.Password, new { @password = "password", @class = "ggg", @placeholder = "Mật khẩu", @type = "password" })
+            @Html.TextBoxFor(model => model.taiKhoan, new { @id = "login", @class = "ggg", @placeholder = "Tài khoản", @autofocus = "autofocus" })
+            @Html.TextBoxFor(model => model.matKhau, new { @password = "password", @class = "ggg", @placeholder = "Mật khẩu", @type = "password" })
             <button type="submit" style="margin-top:15px;"> <i class="fa fa-send"></i>Đăng nhập</button>
             <p class="fs">Forgot <a href="#">Username</a> / <a href="#">Password</a> ? </p>
             <p class="ss">Don't have an account? <a href="">Signup</a></p>
