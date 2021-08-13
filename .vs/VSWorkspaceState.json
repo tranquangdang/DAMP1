@@ -2,11 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\QuanLyTiemChung",
-    "\\QuanLyTiemChung\\Areas",
     "\\QuanLyTiemChung\\Areas\\Admin",
     "\\QuanLyTiemChung\\Areas\\Admin\\Views",
     "\\QuanLyTiemChung\\Areas\\Admin\\Views\\ChiTietGoiTc"
   ],
-  "SelectedNode": "\\QuanLyTiemChung\\Areas\\Admin\\Views\\ChiTietGoiTc\\Index.cshtml",
+  "SelectedNode": "\\QuanLyTiemChung\\Web.config",
   "PreviewInSolutionExplorer": false
 }
