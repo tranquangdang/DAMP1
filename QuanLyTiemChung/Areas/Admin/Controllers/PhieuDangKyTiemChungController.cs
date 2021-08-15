@@ -12,11 +12,21 @@ namespace QuanLyTiemChung.Areas.Admin.Controllers
     public class PhieuDangKyTiemChungController : BaseController
     {
         // GET: Admin/PhieuDangKyTiemChung
-        public ActionResult Index(int page = 1, int pagesize = 10)
+        public ActionResult Index(int? ID)
         {
-            var model = new PhieuDangKyTiemChungDAO().ListAll();
-            return View(model.ToPagedList(page, pagesize));
+            List<PhieuDangKyTiemChung> model;
+            if (ID == null)
+                model = new PhieuDangKyTiemChungDAO().ListAll();
+            else
+            {
+                if (ID > 0)
+                    model = new PhieuDangKyTiemChungDAO().ListByTreEm(ID);
+                else
+                    model = new PhieuDangKyTiemChungDAO().ListUnconfirmed();
+            }
+            return View(model.ToPagedList(1, 10));
         }
+
 
         [HttpGet]
         public ActionResult Book(int ID)

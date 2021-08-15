@@ -13,3 +13,4 @@ D:\OneDrive\Projects\DAPM\DAMP\Models\obj\Debug\Models.csproj.CoreCompileInputs.
 D:\OneDrive\Projects\DAPM\DAMP\Models\obj\Debug\Models.csproj.CopyComplete
 D:\OneDrive\Projects\DAPM\DAMP\Models\obj\Debug\Models.dll
 D:\OneDrive\Projects\DAPM\DAMP\Models\obj\Debug\Models.pdb
+D:\OneDrive\Projects\DAPM\DAMP\Models\obj\Debug\Models.csprojAssemblyReference.cache

@@ -41,5 +41,17 @@ namespace QuanLyTiemChung.Areas.Admin.Controllers
                 TempData["AlertType"] = "alert-danger";
             }
         }
+
+        public void Notification()
+        {
+            var phieuDangKyTiemChung = new PhieuDangKyTiemChungDAO();
+            ViewBag.Unconfirmed = phieuDangKyTiemChung.Unconfirmed();
+            var vaccine = new VaccineDAO();
+            ViewBag.Expired = vaccine.Expired();
+
+            /*ViewBag.UnconfirmedOrders = orderInvoice.UnconfirmedOrders();
+            ViewBag.UnpreparedOrders = orderInvoice.UnpreparedOrders();
+            ViewBag.UnshippedOrders = orderInvoice.UnshippedOrders();*/
+        }
     }
 }

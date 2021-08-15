@@ -48,7 +48,10 @@
                     Mũi tiêm thứ @i
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.ngayTiem)
+                    @{ 
+                        var ngayTiem = String.Format("{0:dd/MM/yyyy}", item.ngayTiem);
+                    }
+                    @Html.DisplayFor(modelItem => ngayTiem)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.trangThai)

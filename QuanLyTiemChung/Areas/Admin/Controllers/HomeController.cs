@@ -13,8 +13,15 @@ namespace QuanLyTiemChung.Areas.Admin.Controllers
         // GET: Admin/Home
         public ActionResult Index()
         {
+            Notification();
             var phieuDangKyTiemChung = new PhieuDangKyTiemChungDAO();
+            var treEm = new TreEmDAO();
+            var vaccine = new VaccineDAO();
+            ViewBag.RevenueChart = phieuDangKyTiemChung.RevenueChart();
             ViewBag.Revenue = phieuDangKyTiemChung.Revenue();
+            ViewBag.TreEmNum = treEm.TreEmNum();
+            ViewBag.VaccineNum = vaccine.VaccineNum();
+            ViewBag.PhieuNum = phieuDangKyTiemChung.PhieuNum();
             return View();
         }
 

@@ -16,6 +16,16 @@ namespace Models.DAO
             db = new WebDbContext();
         }
 
+        public string getChucVu(int ID)
+        {
+            return db.NhanViens.Find(ID).chucVu;
+        }
+
+        public string getTen(int ID)
+        {
+            return db.NhanViens.Find(ID).ten;
+        }
+
         public string login(string user, string pass)
         {
             var result = db.NhanViens.Any(x => x.taiKhoan == user);

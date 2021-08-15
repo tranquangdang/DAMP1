@@ -26,7 +26,7 @@
             <div class="form-group">
                 <label class="control-label col-md-2">Ngày hẹn:</label>
                 <div class="col-md-10">
-                    @Html.TextBoxFor(model => model.ngayHen, "{0:dd-MM-yyyy}", new { @class = "form-control disable datepicker" })
+                    @Html.TextBoxFor(model => model.ngayHen, "{0:MM/dd/yyyy}", new { @class = "form-control disable datepicker" })
                     <script>
                         $(function () {
                             $(".datepicker").datepicker({

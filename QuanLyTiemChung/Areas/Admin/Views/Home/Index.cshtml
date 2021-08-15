@@ -12,8 +12,8 @@
     <div class="col-md-3 market-update-gd">
         <div class="market-update-block clr-block-1">
             <div class="col-md-8 market-update-left">
-                <h4>Khách hàng</h4>
-                <h4>5</h4>
+                <h4>Số trẻ em</h4>
+                <h4>@ViewBag.TreEmNum</h4>
             </div>
             <div class="clearfix"> </div>
         </div>
@@ -22,7 +22,7 @@
         <div class="market-update-block clr-block-2">
             <div class="col-md-8 market-update-left">
                 <h4>Loại vaccine</h4>
-                <h4>44</h4>
+                <h4>@ViewBag.VaccineNum</h4>
             </div>
             <div class="clearfix"> </div>
         </div>
@@ -31,7 +31,7 @@
         <div class="market-update-block clr-block-3">
             <div class="col-md-8 market-update-left">
                 <h4>Tổng doanh thu</h4>
-                <h4>1,254,800</h4>
+                <h4>@String.Format("{0:#,##0₫}", ViewBag.Revenue)</h4>
             </div>
             <div class="clearfix"> </div>
         </div>
@@ -40,7 +40,7 @@
         <div class="market-update-block clr-block-4">
             <div class="col-md-8 market-update-left">
                 <h4>Phiếu đăng ký</h4>
-                <h4>1</h4>
+                <h4>@ViewBag.PhieuNum</h4>
             </div>
             <div class="clearfix"> </div>
         </div>
@@ -64,7 +64,7 @@
     </div>
 </div>
 
-@Html.Raw(ViewBag.Revenue)
+@Html.Raw(ViewBag.RevenueChart)
 
 <script>
     $(document).ready(function() {

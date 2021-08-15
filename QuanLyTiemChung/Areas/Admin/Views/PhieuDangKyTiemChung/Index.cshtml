@@ -72,21 +72,28 @@
                     @Html.DisplayFor(modelItem => item.TreEm.ten)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.TreEm.ngaySinh)
+                    @{
+                        var ngaySinh = String.Format("{0:dd/MM/yyyy}", item.TreEm.ngaySinh);
+                    }
+                    @Html.DisplayFor(modelItem => ngaySinh)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.ngayYeuCau)
+                    @{
+                        var ngayYeuCau = String.Format("{0:dd/MM/yyyy}", item.ngayYeuCau);
+                    }
+                    @Html.DisplayFor(modelItem => ngayYeuCau)
                 </td>
                 <td>
                     @if (item.ngayHen != null)
                     {
-                        @Html.DisplayFor(modelItem => item.ngayHen);
+                        var ngayHen = String.Format("{0:dd/MM/yyyy}", item.ngayHen);
+                        @Html.DisplayFor(modelItem => ngayHen)
                     }
                     else
                     {
-                        <a href="@Url.Action("Book", "PhieuDangKyTiemChung", new { @ID = item.id})" class = "btn btn-danger">
-                            Đặt hẹn
-                        </a>
+                    <a href="@Url.Action("Book", "PhieuDangKyTiemChung", new { @ID = item.id})" class="btn btn-danger">
+                        Đặt hẹn
+                    </a>
                     }
                 </td>
                 <td>

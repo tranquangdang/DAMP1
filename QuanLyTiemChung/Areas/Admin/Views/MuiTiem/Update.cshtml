@@ -1,4 +1,6 @@
 ﻿@model Models.EF.MuiTiem
+@using QuanLyTiemChung.Areas.Admin.Models;
+@using QuanLyTiemChung.Common;
 
 @{
     ViewBag.Title = "Cập nhật thông tin mũi tiêm";
@@ -15,11 +17,16 @@
 
     <div class="form-horizontal">
         <div class="col-lg-12 form-group">
+            @{
+                var session = (LoginModel)Session[Constants.USER_SESSION];
+            }
+            @Html.HiddenFor(model => model.id_nhanVien, new { @Value = @session.id })
+
             @Html.TextBoxFor(model => model.id, new { @class = "form-control hide" })
             <div class="form-group">
                 <label class="control-label col-md-2">Ngày tiêm:</label>
                 <div class="col-md-10">
-                    @Html.TextBoxFor(model => model.ngayTiem, "{0:dd-MM-yyyy}", new { @class = "form-control disable datepicker" })
+                    @Html.TextBoxFor(model => model.ngayTiem, "{0:MM/dd/yyyy}", new { @class = "form-control disable datepicker" })
                     <script>
                         $(function () {
                             $(".datepicker").datepicker({

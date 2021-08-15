@@ -22,9 +22,19 @@ namespace Models.DAO
             return db.Vaccines.ToList();
         }
 
+        public int Expired()
+        {
+            return db.Vaccines.Where(s => DateTime.Today.Day - (s.ngaySanXuat.Month + s.hanSuDung) <= 30).Count();
+        }
+
         public Vaccine Find(int ProductID)
         {
             return db.Vaccines.Find(ProductID);
+        }
+
+        public int VaccineNum()
+        {
+            return (int)db.Vaccines.Count();
         }
 
         public string Insert(Vaccine productEntity)

@@ -22,6 +22,11 @@ namespace Models.DAO
             return db.PhuHuynhs.ToList();
         }
 
+        public PhuHuynh Find(int ID)
+        {
+            return db.PhuHuynhs.Find(ID);
+        }
+
         public IEnumerable<PhuHuynh> ListWhereAll(string keyword, int page, int pagesize)
         {
             IEnumerable<PhuHuynh> model = db.PhuHuynhs;
@@ -53,6 +58,41 @@ namespace Models.DAO
                     return "Sai mật khẩu! ";
                 }
             }
+        }
+
+        public string Insert(PhuHuynh phuHuynhEntity)
+        {
+            var model = Find(phuHuynhEntity.id);
+            if (model == null)
+            {
+                db.PhuHuynhs.Add(phuHuynhEntity);
+            }
+            else
+            {
+                model.ten = phuHuynhEntity.ten;
+                model.sdt = phuHuynhEntity.sdt;
+                model.cmnd = phuHuynhEntity.cmnd;
+                model.taiKhoan = phuHuynhEntity.taiKhoan;
+                model.matKhau = phuHuynhEntity.matKhau;
+            }
+            db.SaveChanges();
+            return phuHuynhEntity.id.ToString();
+        }
+
+        public bool Delete(int ID)
+        {
+            try
+            {
+                var model = Find(ID);
+                db.PhuHuynhs.Remove(model);
+                db.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+
         }
     }
 }

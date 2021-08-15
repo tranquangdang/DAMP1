@@ -28,6 +28,7 @@ namespace Models.DAO
                     where p.id == ID
                     select c).ToList();
         }
+
         public List<ChiTietGoiTC> ListVaccine(int goitiem)
         {
             IQueryable<ChiTietGoiTC> model = (from s in db.ChiTietGoiTCs where s.id_goiTiemChung == goitiem select s);

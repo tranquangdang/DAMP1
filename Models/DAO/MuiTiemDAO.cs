@@ -33,6 +33,8 @@ namespace Models.DAO
             muiTiem.ngayTiem = muiTiemEntity.ngayTiem;
             muiTiem.trangThai = muiTiemEntity.trangThai;
             muiTiem.ghiChu = muiTiemEntity.ghiChu;
+            if (muiTiemEntity.trangThai == "Đã tiêm")
+                muiTiem.id_nhanVien = muiTiemEntity.id_nhanVien;
             db.SaveChanges();
             return muiTiemEntity.id.ToString();
         }

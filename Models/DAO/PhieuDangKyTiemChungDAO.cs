@@ -18,21 +18,31 @@ namespace Models.DAO
 
         public List<PhieuDangKyTiemChung> ListAll()
         {
-            return db.PhieuDangKyTiemChungs.ToList();
+            return db.PhieuDangKyTiemChungs.OrderByDescending(s => s.ngayYeuCau).ToList();
         }
         public List<PhieuDangKyTiemChung> ListNull()
         {
             return db.PhieuDangKyTiemChungs.Where(x => x.ngayHen==null).ToList();
         }
 
-        public object ListWhereAll()
-        {
-            throw new NotImplementedException();
-        }
-
         public PhieuDangKyTiemChung Find(int ID)
         {
             return db.PhieuDangKyTiemChungs.Find(ID);
+        }
+
+        public List<PhieuDangKyTiemChung> ListByTreEm(int? ID)
+        {
+            return db.PhieuDangKyTiemChungs.Where(s => s.id_treEm == ID).OrderByDescending(s => s.ngayYeuCau).ToList();
+        }
+
+        public int Unconfirmed()
+        {
+            return db.PhieuDangKyTiemChungs.Where(s => s.ngayHen == null).Count();
+        }
+
+        public List<PhieuDangKyTiemChung> ListUnconfirmed()
+        {
+            return db.PhieuDangKyTiemChungs.Where(s => s.ngayHen == null).OrderByDescending(s => s.ngayYeuCau).ToList();
         }
 
         public string Insert(PhieuDangKyTiemChung entity)
@@ -59,7 +69,17 @@ namespace Models.DAO
             }
         }
 
-        public string Revenue()
+        public int PhieuNum()
+        {
+            return (int)db.PhieuDangKyTiemChungs.Count();
+        }
+
+        public int Revenue()
+        {
+            return (int)db.PhieuDangKyTiemChungs.Sum(s => s.tongTien);
+        }
+
+        public string RevenueChart()
         {
             decimal? t, l;
             string js = "<script>";

@@ -144,7 +144,7 @@
     <Compile Include="Areas\Admin\Controllers\PhieuDangKyTiemChungController.cs" />
     <Compile Include="Areas\Admin\Controllers\PhuHuynhController.cs" />
     <Compile Include="Areas\Admin\Controllers\SetTiemChungController.cs" />
-    <Compile Include="Areas\Admin\Controllers\ThongKeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\TreEmController.cs" />
     <Compile Include="Areas\Admin\Controllers\VaccineController.cs" />
     <Compile Include="Areas\Admin\Models\LoginModel.cs" />
     <Compile Include="Areas\QLTCWebsite\Controllers\HomeController.cs" />
@@ -393,10 +393,12 @@
     <Content Include="Areas\QLTCWebsite\Views\web.config" />
     <Content Include="Areas\Admin\Views\ChiTietGoiTc\Index.cshtml" />
     <Content Include="Areas\Admin\Views\PhieuDangKyTiemChung\Book.cshtml" />
-    <Content Include="Areas\Admin\Views\ThongKe\Index.cshtml" />
     <Content Include="Areas\Admin\Views\GoiTiemChung\EditVaccine.cshtml" />
     <Content Include="Content\bootstrap-chosen.scss" />
     <Content Include="Content\bootstrap-chosen.less" />
+    <Content Include="Areas\Admin\Views\TreEm\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\PhuHuynh\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\TreEm\Create.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\chosen.jquery.js" />
     <Content Include="Scripts\chosen.jquery.min.js" />

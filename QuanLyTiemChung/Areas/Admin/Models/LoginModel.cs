@@ -13,5 +13,7 @@ namespace QuanLyTiemChung.Areas.Admin.Models
         [Required]
         public string matKhau { get; set; }
         public int id { get; set; }
+        public string chucVu { get; set; }
+        public string ten { get; set; }
     }
 }

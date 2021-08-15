@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace QuanLyTiemChung.Areas.Admin.Controllers
 {
-    public class ChiTietGoiTcController : Controller
+    public class ChiTietGoiTcController : BaseController
     {
         private static int id_dangKy;
 
@@ -23,8 +23,8 @@ namespace QuanLyTiemChung.Areas.Admin.Controllers
 
         public void SetViewBag(string selectedId = null)
         {
-            var vaccine = new VaccineDAO();
-            ViewBag.vaccine = new SelectList(vaccine.ListAll(), "id", "ten", selectedId);
+            var PhuHuynh = new PhuHuynhDAO();
+            ViewBag.PhuHuynh = new SelectList(PhuHuynh.ListAll(), "id", "ten", selectedId);
 
         }
 

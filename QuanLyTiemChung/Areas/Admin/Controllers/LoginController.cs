@@ -28,6 +28,8 @@ namespace QuanLyTiemChung.Areas.Admin.Controllers
                 if (int.TryParse(result, out int value))
                 {
                     user.id = value;
+                    user.chucVu = dao.getChucVu(value);
+                    user.ten = dao.getTen(value);
                     Session.Add(Constants.USER_SESSION, user);
                     return RedirectToAction("Index", "Home");
                 }
