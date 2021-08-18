@@ -2,6 +2,7 @@
 using PagedList;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,7 +25,12 @@ namespace Models.DAO
 
         public int Expired()
         {
-            return db.Vaccines.Where(s => DateTime.Today.Day - (s.ngaySanXuat.Month + s.hanSuDung) <= 30).Count();
+            return db.Vaccines.Where(s => DateTime.Now > DbFunctions.AddMonths(s.ngaySanXuat,s.hanSuDung)).Count();
+        }
+
+        public List<Vaccine> ListExpired()
+        {
+            return db.Vaccines.Where(s => DateTime.Now > DbFunctions.AddMonths(s.ngaySanXuat, s.hanSuDung)).ToList();
         }
 
         public Vaccine Find(int ProductID)

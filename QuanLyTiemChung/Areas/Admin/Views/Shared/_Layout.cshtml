@@ -5,6 +5,10 @@
     Layout = null;
 }
 
+@{
+    var session = (LoginModel)Session[Constants.USER_SESSION];
+}
+
 <!DOCTYPE html>
 <head>
     <title>@ViewBag.Title - Quản trị</title>
@@ -55,7 +59,7 @@
                     <!-- notification dropdown start-->
                     <ul class="nav top-menu">
                         <!-- notification dropdown start-->
-                        @if (ViewBag.Unconfirmed > 0)
+                        @if ((ViewBag.Unconfirmed > 0 || ViewBag.Expired > 0) && @session.chucVu == "Quản lý")
                         {
                             <li id="header_notification_bar" class="dropdown">
                                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">
@@ -84,7 +88,7 @@
                                                 <span class="alert-icon"><i class="fa fa-bolt"></i></span>
                                                 <div class="noti-info">
                                                     <a href="@Url.Action("Index", "Vaccine", new { ID = -1})">
-                                                        Có @ViewBag.Expired vaccine gần hết hạn!
+                                                        Có @ViewBag.Expired vaccine đã hết hạn!
                                                     </a>
                                                 </div>
                                             </div>
@@ -109,7 +113,6 @@
                             <img alt="" src="~/Assets/admin/images/2.png">
                             <span class="username">
                                 @{
-                                    var session = (LoginModel)Session[Constants.USER_SESSION];
                                     if (session != null)
                                     {
                                         @session.ten;
@@ -145,38 +148,38 @@
                                 <span>Phiếu đăng ký</span>
                             </a>
                         </li>
-                        @if (@session.chucVu == "Qu?n lý")
+                        @if (@session.chucVu == "Quản lý")
                         {
-                        <li class="sub-menu">
-                            <a href="@Url.Action("Index", "Vaccine")">
-                                <i class="fas fa-boxes"></i>
-                                <span>Vaccine</span>
-                            </a>
-                        </li>
-                        <li class="sub-menu">
-                            <a href="@Url.Action("Index", "LoaiTiemChung")">
-                                <i class="fa fa-list"></i>
-                                <span>Gói tiêm</span>
-                            </a>
-                        </li>
-                        <li class="sub-menu">
-                            <a href="@Url.Action("Index", "PhuHuynh")">
-                                <i class="fa fa-user"></i>
-                                <span>Khách hàng</span>
-                            </a>
-                        </li>
+                            <li class="sub-menu">
+                                <a href="@Url.Action("Index", "Vaccine")">
+                                    <i class="fas fa-boxes"></i>
+                                    <span>Vaccine</span>
+                                </a>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="@Url.Action("Index", "LoaiTiemChung")">
+                                    <i class="fa fa-list"></i>
+                                    <span>Gói tiêm</span>
+                                </a>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="@Url.Action("Index", "PhuHuynh")">
+                                    <i class="fa fa-user"></i>
+                                    <span>Khách hàng</span>
+                                </a>
+                            </li>
                         }
                         @*<li class="sub-menu">
-            <a href="javascript:;">
-                <i class="fa fa-user"></i>
-                <span>Admin</span>
-            </a>
-            <ul class="sub">
-                <li>
-                    <a href="@Url.Action("Index", "User")">Quản lý Admin</a>
-                </li>
-            </ul>
-        </li>*@
+                                <a href="javascript:;">
+                                    <i class="fa fa-user"></i>
+                                    <span>Admin</span>
+                                </a>
+                                <ul class="sub">
+                                    <li>
+                                        <a href="@Url.Action("Index", "User")">Quản lý Admin</a>
+                                    </li>
+                                </ul>
+                            </li>*@
                     </ul>
                 </div>
                 <!-- sidebar menu end-->

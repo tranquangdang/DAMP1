@@ -17,7 +17,7 @@ namespace QuanLyTiemChung.Areas.Admin.Controllers
         {
             List<Vaccine> model;
             if (ID != null)
-                model = new VaccineDAO().ListAll();
+                model = new VaccineDAO().ListExpired();            
             else
                 model = new VaccineDAO().ListAll();
             return View(model.ToPagedList(1, 10));

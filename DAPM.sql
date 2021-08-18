@@ -34,8 +34,8 @@ create table NhanVien
 	ten nvarchar(100) not null,
 	sdt char(10) not null unique
 		check (sdt like '[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]'),
-	chucVu varchar(100) not null
-		CHECK (chucVu like 'Quản lý' or chucVu like 'Y tế'),
+	chucVu nvarchar(100) not null
+		CHECK (chucVu like N'Quản lý' or chucVu like N'Y tế'),
 	taiKhoan varchar(100) not null unique,
 	matKhau varchar(100) not null,
 	trangThai tinyint not null
@@ -180,9 +180,9 @@ create table Vaccine
 go
 
 insert into Vaccine
-values	(N'Pentaxim (5in1)', 1, 785000, '01-01-2019', 3, 100, N'Pháp', N'Không', 'https://vnvc.vn/wp-content/uploads/2017/04/PENTAXIM-5.jpg'),
-		(N'Infanrix IPV- HIB', 1, 791000, '01-01-2019', 3, 100, N'Bỉ', N'Không', 'https://vnvc.vn/wp-content/uploads/2021/06/vac-xin-5-trong-1-infanrix-ipv-hib.jpg'),
-		(N'Infanrix Hexa (6in1)', 2, 1015000, '01-01-2019', 3, 100, N'Bỉ', N'Không', 'https://vnvc.vn/wp-content/uploads/2017/04/INFANRIX-6.jpg'),
+values	(N'Pentaxim (5in1)', 1, 785000, '15-08-2021', 3, 100, N'Pháp', N'Không', 'https://vnvc.vn/wp-content/uploads/2017/04/PENTAXIM-5.jpg'),
+		(N'Infanrix IPV- HIB', 1, 791000, '15-08-2021', 3, 100, N'Bỉ', N'Không', 'https://vnvc.vn/wp-content/uploads/2021/06/vac-xin-5-trong-1-infanrix-ipv-hib.jpg'),
+		(N'Infanrix Hexa (6in1)', 2, 1015000, '15-08-2021', 3, 100, N'Bỉ', N'Không', 'https://vnvc.vn/wp-content/uploads/2017/04/INFANRIX-6.jpg'),
 		(N'Hexaxim (6in1)', 2, 1048000, '01-01-2019', 3, 100, N'Pháp', N'Không', 'https://vnvc.vn/wp-content/uploads/2018/06/vc-hexaxim.jpg'),
 		(N'Rotateq', 3, 665000, '01-01-2019', 3, 100, N'Mỹ', N'Không', 'https://vnvc.vn/wp-content/uploads/2021/02/ROTATEQ.jpg'),
 		(N'Rotarix', 3, 825000, '01-01-2019', 3, 100, N'Bỉ', N'Không', 'https://vnvc.vn/wp-content/uploads/2017/04/ROTARIX.jpg'),

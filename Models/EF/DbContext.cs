@@ -58,10 +58,6 @@ namespace Models.EF
                 .IsUnicode(false);
 
             modelBuilder.Entity<NhanVien>()
-                .Property(e => e.chucVu)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<NhanVien>()
                 .Property(e => e.taiKhoan)
                 .IsUnicode(false);
 
